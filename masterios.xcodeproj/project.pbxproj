@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		130BA1B9E65171342C97410C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130BA751CD2AC06B17DC8CCE /* Main.storyboard */; };
+		130BA5F97163554A7C491B3A /* masteriosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BACDD85BB5E71CC838E97 /* masteriosUITests.swift */; };
+		130BAA236E28EE4E8BD4C8FB /* masterios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 130BA2DB0AB773C343490D9D /* masterios.xcdatamodeld */; };
+		130BAAA34C4B04DC382C99D3 /* masteriosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA88FF33A8CAB6A03BED0 /* masteriosTests.swift */; };
+		130BAC345E88FAE5A4D7F28C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130BAEF682CE0A27966E4124 /* LaunchScreen.storyboard */; };
+		130BAD978643DA0651FD93CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130BA022FB1633798C2AF523 /* Assets.xcassets */; };
+		130BADBBEA3A9985C447E036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA4946A4E3B0F9E384C9F /* ViewController.swift */; };
+		130BAEEBC021D20C2945949F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA47D24DD8D28C95ADDA3 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		130BA429A543668723A9DAC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 130BAB0AB8AACF9E529EFCB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 130BA4C26E25B90F85E1D13B;
+			remoteInfo = masterios;
+		};
+		130BAC9EFC9174932CED26B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 130BAB0AB8AACF9E529EFCB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 130BA4C26E25B90F85E1D13B;
+			remoteInfo = masterios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		130BA022FB1633798C2AF523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		130BA062C083BC4EA5E9670D /* masterios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = masterios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		130BA1DA6337D241E157AE14 /* masteriosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = masteriosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		130BA47D24DD8D28C95ADDA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		130BA4946A4E3B0F9E384C9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		130BA533B506BB77AF8FA79D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		130BA653116FDFF31CE07455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		130BA69D0E521754E52A19BD /* masteriosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = masteriosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		130BA8729EB10F37241F6EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		130BA88FF33A8CAB6A03BED0 /* masteriosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masteriosTests.swift; sourceTree = "<group>"; };
+		130BAAEBF37F7BDE6AB40EFF /* masterios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = masterios.xcdatamodel; sourceTree = "<group>"; };
+		130BAC5D9B5FDBE9D5222E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		130BACDD85BB5E71CC838E97 /* masteriosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masteriosUITests.swift; sourceTree = "<group>"; };
+		130BAE65CB99FA7B78AD9591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		130BA2C331DFC43984AD2F73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		130BA95BE8B4FC3292AE7847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		130BAE6027632847A1DC15C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		130BA4BCC819FCD7FEBD0E99 /* masteriosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				130BA8729EB10F37241F6EF4 /* Info.plist */,
+				130BACDD85BB5E71CC838E97 /* masteriosUITests.swift */,
+			);
+			path = masteriosUITests;
+			sourceTree = "<group>";
+		};
+		130BA810E726DF4EBF21580F /* masteriosTests */ = {
+			isa = PBXGroup;
+			children = (
+				130BA653116FDFF31CE07455 /* Info.plist */,
+				130BA88FF33A8CAB6A03BED0 /* masteriosTests.swift */,
+			);
+			path = masteriosTests;
+			sourceTree = "<group>";
+		};
+		130BA849754056FAB275FB90 /* masterios */ = {
+			isa = PBXGroup;
+			children = (
+				130BAE65CB99FA7B78AD9591 /* Info.plist */,
+				130BA022FB1633798C2AF523 /* Assets.xcassets */,
+				130BAEF682CE0A27966E4124 /* LaunchScreen.storyboard */,
+				130BA47D24DD8D28C95ADDA3 /* AppDelegate.swift */,
+				130BA2DB0AB773C343490D9D /* masterios.xcdatamodeld */,
+				130BA751CD2AC06B17DC8CCE /* Main.storyboard */,
+				130BA4946A4E3B0F9E384C9F /* ViewController.swift */,
+			);
+			path = masterios;
+			sourceTree = "<group>";
+		};
+		130BABB2B022D94B54162655 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				130BA062C083BC4EA5E9670D /* masterios.app */,
+				130BA69D0E521754E52A19BD /* masteriosTests.xctest */,
+				130BA1DA6337D241E157AE14 /* masteriosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		130BACBE445ADC25A6EFB923 = {
+			isa = PBXGroup;
+			children = (
+				130BABB2B022D94B54162655 /* Products */,
+				130BA849754056FAB275FB90 /* masterios */,
+				130BA810E726DF4EBF21580F /* masteriosTests */,
+				130BA4BCC819FCD7FEBD0E99 /* masteriosUITests */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		130BA4C26E25B90F85E1D13B /* masterios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 130BA06E127C42241AA9F5FD /* Build configuration list for PBXNativeTarget "masterios" */;
+			buildPhases = (
+				130BAF2515504E2BE911675C /* Sources */,
+				130BAE6027632847A1DC15C3 /* Frameworks */,
+				130BA02442777AF508563934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = masterios;
+			productName = masterios;
+			productReference = 130BA062C083BC4EA5E9670D /* masterios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		130BA746F72E108C7B4743DE /* masteriosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 130BAB4D54C2C4052A6C4DF6 /* Build configuration list for PBXNativeTarget "masteriosUITests" */;
+			buildPhases = (
+				130BAB6B523596F71FB57E17 /* Sources */,
+				130BA2C331DFC43984AD2F73 /* Frameworks */,
+				130BAB428A141EF7B64DCF06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				130BACDC7808D40F082AA485 /* PBXTargetDependency */,
+			);
+			name = masteriosUITests;
+			productName = masteriosUITests;
+			productReference = 130BA1DA6337D241E157AE14 /* masteriosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		130BAFBC1A339EA75631F4D9 /* masteriosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 130BA7F87C321C1F626CC5D9 /* Build configuration list for PBXNativeTarget "masteriosTests" */;
+			buildPhases = (
+				130BAB9FAAED0ADA14DC5141 /* Sources */,
+				130BA95BE8B4FC3292AE7847 /* Frameworks */,
+				130BA482C79611612C284506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				130BA178662B02A52645F557 /* PBXTargetDependency */,
+			);
+			name = masteriosTests;
+			productName = masteriosTests;
+			productReference = 130BA69D0E521754E52A19BD /* masteriosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		130BAB0AB8AACF9E529EFCB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = masterapp;
+			};
+			buildConfigurationList = 130BA2EACB348E8D3338F1EA /* Build configuration list for PBXProject "masterios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 130BACBE445ADC25A6EFB923;
+			productRefGroup = 130BABB2B022D94B54162655 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				130BA4C26E25B90F85E1D13B /* masterios */,
+				130BAFBC1A339EA75631F4D9 /* masteriosTests */,
+				130BA746F72E108C7B4743DE /* masteriosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		130BA02442777AF508563934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				130BAD978643DA0651FD93CB /* Assets.xcassets in Resources */,
+				130BAC345E88FAE5A4D7F28C /* LaunchScreen.storyboard in Resources */,
+				130BA1B9E65171342C97410C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		130BA482C79611612C284506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		130BAB428A141EF7B64DCF06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		130BAB6B523596F71FB57E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				130BA5F97163554A7C491B3A /* masteriosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		130BAB9FAAED0ADA14DC5141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				130BAAA34C4B04DC382C99D3 /* masteriosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		130BAF2515504E2BE911675C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				130BAEEBC021D20C2945949F /* AppDelegate.swift in Sources */,
+				130BAA236E28EE4E8BD4C8FB /* masterios.xcdatamodeld in Sources */,
+				130BADBBEA3A9985C447E036 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		130BA178662B02A52645F557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 130BA4C26E25B90F85E1D13B /* masterios */;
+			targetProxy = 130BA429A543668723A9DAC4 /* PBXContainerItemProxy */;
+		};
+		130BACDC7808D40F082AA485 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 130BA4C26E25B90F85E1D13B /* masterios */;
+			targetProxy = 130BAC9EFC9174932CED26B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		130BA751CD2AC06B17DC8CCE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				130BAC5D9B5FDBE9D5222E1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		130BAEF682CE0A27966E4124 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				130BA533B506BB77AF8FA79D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		130BA22BE7B150B7D96D6A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = masteriosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.masterapp.masteriosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = masterios;
+			};
+			name = Debug;
+		};
+		130BA461F00445D0E455DE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		130BA624DA0A78B78E164873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/masterios.app/masterios";
+				INFOPLIST_FILE = masteriosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.masterapp.masteriosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		130BA72DEF456A2EB24EA956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = masterios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.masterapp.masterios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		130BA7446736FDD4B1D2E33B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = masteriosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.masterapp.masteriosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = masterios;
+			};
+			name = Release;
+		};
+		130BA7B77217469B69925047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = masterios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.masterapp.masterios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		130BABAF72907AB3EA1E3E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		130BABD5CD07BEBFF385CE36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/masterios.app/masterios";
+				INFOPLIST_FILE = masteriosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.masterapp.masteriosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		130BA06E127C42241AA9F5FD /* Build configuration list for PBXNativeTarget "masterios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				130BA7B77217469B69925047 /* Debug */,
+				130BA72DEF456A2EB24EA956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		130BA2EACB348E8D3338F1EA /* Build configuration list for PBXProject "masterios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				130BABAF72907AB3EA1E3E5C /* Debug */,
+				130BA461F00445D0E455DE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		130BA7F87C321C1F626CC5D9 /* Build configuration list for PBXNativeTarget "masteriosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				130BABD5CD07BEBFF385CE36 /* Debug */,
+				130BA624DA0A78B78E164873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		130BAB4D54C2C4052A6C4DF6 /* Build configuration list for PBXNativeTarget "masteriosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				130BA22BE7B150B7D96D6A99 /* Debug */,
+				130BA7446736FDD4B1D2E33B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		130BA2DB0AB773C343490D9D /* masterios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				130BAAEBF37F7BDE6AB40EFF /* masterios.xcdatamodel */,
+			);
+			currentVersion = 130BAAEBF37F7BDE6AB40EFF /* masterios.xcdatamodel */;
+			path = masterios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 130BAB0AB8AACF9E529EFCB7 /* Project object */;
+}
