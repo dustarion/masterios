@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		130BA0D21B98D743BE0DD693 /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7A93B1C2238AF1D20A6 /* color.swift */; };
-		130BA1B9E65171342C97410C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130BA751CD2AC06B17DC8CCE /* Main.storyboard */; };
 		130BA5F97163554A7C491B3A /* masteriosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BACDD85BB5E71CC838E97 /* masteriosUITests.swift */; };
 		130BAA046EBCF7593E5F9E15 /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7A93B1C2238AF1D20A6 /* color.swift */; };
 		130BAA236E28EE4E8BD4C8FB /* masterios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 130BA2DB0AB773C343490D9D /* masterios.xcdatamodeld */; };
@@ -19,6 +18,7 @@
 		130BADBBEA3A9985C447E036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA4946A4E3B0F9E384C9F /* ViewController.swift */; };
 		130BAEEBC021D20C2945949F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA47D24DD8D28C95ADDA3 /* AppDelegate.swift */; };
 		34070E4683230A117E93A7F3 /* Pods_masteriosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F56844231D259BC89E41B03 /* Pods_masteriosUITests.framework */; };
+		49968120223A6C5A0009947B /* dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996811F223A6C5A0009947B /* dashboard.swift */; };
 		8884F7F6A7C93C1F0C9625F0 /* Pods_masterios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44057DA5C74DE57AA23FC0D /* Pods_masterios.framework */; };
 		FDDBA9E73E45EBCD350F3EB7 /* Pods_masteriosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7CCA9FB7B0942AAA7AB588 /* Pods_masteriosTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,11 +54,11 @@
 		130BA8729EB10F37241F6EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		130BA88FF33A8CAB6A03BED0 /* masteriosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masteriosTests.swift; sourceTree = "<group>"; };
 		130BAAEBF37F7BDE6AB40EFF /* masterios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = masterios.xcdatamodel; sourceTree = "<group>"; };
-		130BAC5D9B5FDBE9D5222E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		130BACDD85BB5E71CC838E97 /* masteriosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masteriosUITests.swift; sourceTree = "<group>"; };
 		130BAE65CB99FA7B78AD9591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		1E36FF8EE4DC3FC41CA25765 /* Pods-masterios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masterios.release.xcconfig"; path = "Target Support Files/Pods-masterios/Pods-masterios.release.xcconfig"; sourceTree = "<group>"; };
 		2F56844231D259BC89E41B03 /* Pods_masteriosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_masteriosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4996811F223A6C5A0009947B /* dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboard.swift; sourceTree = "<group>"; };
 		5F7CCA9FB7B0942AAA7AB588 /* Pods_masteriosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_masteriosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		600A6B4DCE80A8CE3103AB76 /* Pods-masteriosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masteriosUITests.release.xcconfig"; path = "Target Support Files/Pods-masteriosUITests/Pods-masteriosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		814E5284691F70674E507A80 /* Pods-masteriosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masteriosTests.debug.xcconfig"; path = "Target Support Files/Pods-masteriosTests/Pods-masteriosTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,9 +119,9 @@
 				130BAE65CB99FA7B78AD9591 /* Info.plist */,
 				130BA022FB1633798C2AF523 /* Assets.xcassets */,
 				130BAEF682CE0A27966E4124 /* LaunchScreen.storyboard */,
+				4996811F223A6C5A0009947B /* dashboard.swift */,
 				130BA47D24DD8D28C95ADDA3 /* AppDelegate.swift */,
 				130BA2DB0AB773C343490D9D /* masterios.xcdatamodeld */,
-				130BA751CD2AC06B17DC8CCE /* Main.storyboard */,
 				130BA4946A4E3B0F9E384C9F /* ViewController.swift */,
 				130BA7A93B1C2238AF1D20A6 /* color.swift */,
 			);
@@ -273,7 +273,6 @@
 			files = (
 				130BAD978643DA0651FD93CB /* Assets.xcassets in Resources */,
 				130BAC345E88FAE5A4D7F28C /* LaunchScreen.storyboard in Resources */,
-				130BA1B9E65171342C97410C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49968120223A6C5A0009947B /* dashboard.swift in Sources */,
 				130BAEEBC021D20C2945949F /* AppDelegate.swift in Sources */,
 				130BAA236E28EE4E8BD4C8FB /* masterios.xcdatamodeld in Sources */,
 				130BADBBEA3A9985C447E036 /* ViewController.swift in Sources */,
@@ -460,14 +460,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		130BA751CD2AC06B17DC8CCE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				130BAC5D9B5FDBE9D5222E1F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		130BAEF682CE0A27966E4124 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
