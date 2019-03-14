@@ -15,6 +15,9 @@
 		130BAD978643DA0651FD93CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130BA022FB1633798C2AF523 /* Assets.xcassets */; };
 		130BADBBEA3A9985C447E036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA4946A4E3B0F9E384C9F /* ViewController.swift */; };
 		130BAEEBC021D20C2945949F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA47D24DD8D28C95ADDA3 /* AppDelegate.swift */; };
+		34070E4683230A117E93A7F3 /* Pods_masteriosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F56844231D259BC89E41B03 /* Pods_masteriosUITests.framework */; };
+		8884F7F6A7C93C1F0C9625F0 /* Pods_masterios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44057DA5C74DE57AA23FC0D /* Pods_masterios.framework */; };
+		FDDBA9E73E45EBCD350F3EB7 /* Pods_masteriosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7CCA9FB7B0942AAA7AB588 /* Pods_masteriosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F1F1B00497EC5557EBFA417 /* Pods-masterios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masterios.debug.xcconfig"; path = "Target Support Files/Pods-masterios/Pods-masterios.debug.xcconfig"; sourceTree = "<group>"; };
 		130BA022FB1633798C2AF523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		130BA062C083BC4EA5E9670D /* masterios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = masterios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		130BA1DA6337D241E157AE14 /* masteriosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = masteriosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +53,14 @@
 		130BAC5D9B5FDBE9D5222E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		130BACDD85BB5E71CC838E97 /* masteriosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masteriosUITests.swift; sourceTree = "<group>"; };
 		130BAE65CB99FA7B78AD9591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		1E36FF8EE4DC3FC41CA25765 /* Pods-masterios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masterios.release.xcconfig"; path = "Target Support Files/Pods-masterios/Pods-masterios.release.xcconfig"; sourceTree = "<group>"; };
+		2F56844231D259BC89E41B03 /* Pods_masteriosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_masteriosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F7CCA9FB7B0942AAA7AB588 /* Pods_masteriosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_masteriosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		600A6B4DCE80A8CE3103AB76 /* Pods-masteriosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masteriosUITests.release.xcconfig"; path = "Target Support Files/Pods-masteriosUITests/Pods-masteriosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		814E5284691F70674E507A80 /* Pods-masteriosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masteriosTests.debug.xcconfig"; path = "Target Support Files/Pods-masteriosTests/Pods-masteriosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C15912463ECC1669F774D1B /* Pods-masteriosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masteriosTests.release.xcconfig"; path = "Target Support Files/Pods-masteriosTests/Pods-masteriosTests.release.xcconfig"; sourceTree = "<group>"; };
+		B44057DA5C74DE57AA23FC0D /* Pods_masterios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_masterios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5482FEA08CD6B472AAC637 /* Pods-masteriosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masteriosUITests.debug.xcconfig"; path = "Target Support Files/Pods-masteriosUITests/Pods-masteriosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34070E4683230A117E93A7F3 /* Pods_masteriosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDDBA9E73E45EBCD350F3EB7 /* Pods_masteriosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8884F7F6A7C93C1F0C9625F0 /* Pods_masterios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +140,33 @@
 				130BA849754056FAB275FB90 /* masterios */,
 				130BA810E726DF4EBF21580F /* masteriosTests */,
 				130BA4BCC819FCD7FEBD0E99 /* masteriosUITests */,
+				66EF8B09EEFA16C61CDFDDD1 /* Pods */,
+				A04BFB3857BB1B5F3C576026 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		66EF8B09EEFA16C61CDFDDD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F1F1B00497EC5557EBFA417 /* Pods-masterios.debug.xcconfig */,
+				1E36FF8EE4DC3FC41CA25765 /* Pods-masterios.release.xcconfig */,
+				814E5284691F70674E507A80 /* Pods-masteriosTests.debug.xcconfig */,
+				9C15912463ECC1669F774D1B /* Pods-masteriosTests.release.xcconfig */,
+				CE5482FEA08CD6B472AAC637 /* Pods-masteriosUITests.debug.xcconfig */,
+				600A6B4DCE80A8CE3103AB76 /* Pods-masteriosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A04BFB3857BB1B5F3C576026 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B44057DA5C74DE57AA23FC0D /* Pods_masterios.framework */,
+				5F7CCA9FB7B0942AAA7AB588 /* Pods_masteriosTests.framework */,
+				2F56844231D259BC89E41B03 /* Pods_masteriosUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 130BA06E127C42241AA9F5FD /* Build configuration list for PBXNativeTarget "masterios" */;
 			buildPhases = (
+				61B1813513302B12B5EB6D86 /* [CP] Check Pods Manifest.lock */,
 				130BAF2515504E2BE911675C /* Sources */,
 				130BAE6027632847A1DC15C3 /* Frameworks */,
 				130BA02442777AF508563934 /* Resources */,
+				F73BBFD9A32B0E28AFC80849 /* [CP] Embed Pods Frameworks */,
+				24E235AA6CEDB20A18BAA509 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 130BAB4D54C2C4052A6C4DF6 /* Build configuration list for PBXNativeTarget "masteriosUITests" */;
 			buildPhases = (
+				980DC550C65A5665F19965F2 /* [CP] Check Pods Manifest.lock */,
 				130BAB6B523596F71FB57E17 /* Sources */,
 				130BA2C331DFC43984AD2F73 /* Frameworks */,
 				130BAB428A141EF7B64DCF06 /* Resources */,
@@ -170,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 130BA7F87C321C1F626CC5D9 /* Build configuration list for PBXNativeTarget "masteriosTests" */;
 			buildPhases = (
+				BC3922150E6F22F74FAB40C2 /* [CP] Check Pods Manifest.lock */,
 				130BAB9FAAED0ADA14DC5141 /* Sources */,
 				130BA95BE8B4FC3292AE7847 /* Frameworks */,
 				130BA482C79611612C284506 /* Resources */,
@@ -238,6 +284,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24E235AA6CEDB20A18BAA509 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-masterios/Pods-masterios-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-masterios/Pods-masterios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61B1813513302B12B5EB6D86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-masterios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		980DC550C65A5665F19965F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-masteriosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC3922150E6F22F74FAB40C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-masteriosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F73BBFD9A32B0E28AFC80849 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-masterios/Pods-masterios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-masterios/Pods-masterios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		130BAB6B523596F71FB57E17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -302,6 +469,7 @@
 /* Begin XCBuildConfiguration section */
 		130BA22BE7B150B7D96D6A99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5482FEA08CD6B472AAC637 /* Pods-masteriosUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = masteriosUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -370,6 +538,7 @@
 		};
 		130BA624DA0A78B78E164873 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C15912463ECC1669F774D1B /* Pods-masteriosTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/masterios.app/masterios";
 				INFOPLIST_FILE = masteriosTests/Info.plist;
@@ -384,6 +553,7 @@
 		};
 		130BA72DEF456A2EB24EA956 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E36FF8EE4DC3FC41CA25765 /* Pods-masterios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = masterios/Info.plist;
@@ -397,6 +567,7 @@
 		};
 		130BA7446736FDD4B1D2E33B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 600A6B4DCE80A8CE3103AB76 /* Pods-masteriosUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = masteriosUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -410,6 +581,7 @@
 		};
 		130BA7B77217469B69925047 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F1F1B00497EC5557EBFA417 /* Pods-masterios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = masterios/Info.plist;
@@ -484,6 +656,7 @@
 		};
 		130BABD5CD07BEBFF385CE36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814E5284691F70674E507A80 /* Pods-masteriosTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/masterios.app/masterios";
 				INFOPLIST_FILE = masteriosTests/Info.plist;
