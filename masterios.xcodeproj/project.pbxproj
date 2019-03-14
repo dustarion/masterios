@@ -160,7 +160,6 @@
 				CE5482FEA08CD6B472AAC637 /* Pods-masteriosUITests.debug.xcconfig */,
 				600A6B4DCE80A8CE3103AB76 /* Pods-masteriosUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -242,6 +241,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = masterapp;
+				TargetAttributes = {
+					130BA4C26E25B90F85E1D13B = {
+						DevelopmentTeam = 8G53CM2KCR;
+					};
+				};
 			};
 			buildConfigurationList = 130BA2EACB348E8D3338F1EA /* Build configuration list for PBXProject "masterios" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -538,8 +542,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -564,6 +567,7 @@
 			baseConfigurationReference = 1E36FF8EE4DC3FC41CA25765 /* Pods-masterios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8G53CM2KCR;
 				INFOPLIST_FILE = masterios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.masterapp.masterios;
@@ -592,6 +596,7 @@
 			baseConfigurationReference = 0F1F1B00497EC5557EBFA417 /* Pods-masterios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8G53CM2KCR;
 				INFOPLIST_FILE = masterios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.masterapp.masterios;
@@ -687,6 +692,7 @@
 				130BA72DEF456A2EB24EA956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		130BA2EACB348E8D3338F1EA /* Build configuration list for PBXProject "masterios" */ = {
 			isa = XCConfigurationList;
@@ -704,6 +710,7 @@
 				130BA624DA0A78B78E164873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		130BAB4D54C2C4052A6C4DF6 /* Build configuration list for PBXNativeTarget "masteriosUITests" */ = {
 			isa = XCConfigurationList;
@@ -712,6 +719,7 @@
 				130BA7446736FDD4B1D2E33B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
