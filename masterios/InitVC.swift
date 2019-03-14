@@ -13,10 +13,10 @@ class InitVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(rgb: 0x212121)
+        self.view.backgroundColor = UIColor(rgb: 0x1f2833)
 
+        hero.isEnabled = true
         loadViews()
-
     }
 
     fileprivate func loadViews() {

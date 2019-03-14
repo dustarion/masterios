@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		130BA0D21B98D743BE0DD693 /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7A93B1C2238AF1D20A6 /* color.swift */; };
+		130BA150EC39D693067FE486 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7639AF7D9EA3B6E74C3 /* LoginVC.swift */; };
 		130BA1B9E65171342C97410C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130BA751CD2AC06B17DC8CCE /* Main.storyboard */; };
 		130BA5F97163554A7C491B3A /* masteriosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BACDD85BB5E71CC838E97 /* masteriosUITests.swift */; };
+		130BA647699BE8DB18851F68 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7639AF7D9EA3B6E74C3 /* LoginVC.swift */; };
 		130BAA046EBCF7593E5F9E15 /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7A93B1C2238AF1D20A6 /* color.swift */; };
 		130BAA236E28EE4E8BD4C8FB /* masterios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 130BA2DB0AB773C343490D9D /* masterios.xcdatamodeld */; };
 		130BAAA34C4B04DC382C99D3 /* masteriosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA88FF33A8CAB6A03BED0 /* masteriosTests.swift */; };
@@ -18,6 +20,7 @@
 		130BAD978643DA0651FD93CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130BA022FB1633798C2AF523 /* Assets.xcassets */; };
 		130BADBBEA3A9985C447E036 /* InitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA4946A4E3B0F9E384C9F /* InitVC.swift */; };
 		130BAEEBC021D20C2945949F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA47D24DD8D28C95ADDA3 /* AppDelegate.swift */; };
+		130BAFB8513404C293B4F97A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7639AF7D9EA3B6E74C3 /* LoginVC.swift */; };
 		34070E4683230A117E93A7F3 /* Pods_masteriosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F56844231D259BC89E41B03 /* Pods_masteriosUITests.framework */; };
 		8884F7F6A7C93C1F0C9625F0 /* Pods_masterios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44057DA5C74DE57AA23FC0D /* Pods_masterios.framework */; };
 		FDDBA9E73E45EBCD350F3EB7 /* Pods_masteriosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7CCA9FB7B0942AAA7AB588 /* Pods_masteriosTests.framework */; };
@@ -50,6 +53,7 @@
 		130BA533B506BB77AF8FA79D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		130BA653116FDFF31CE07455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		130BA69D0E521754E52A19BD /* masteriosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = masteriosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		130BA7639AF7D9EA3B6E74C3 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		130BA7A93B1C2238AF1D20A6 /* color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = color.swift; sourceTree = "<group>"; };
 		130BA8729EB10F37241F6EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		130BA88FF33A8CAB6A03BED0 /* masteriosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masteriosTests.swift; sourceTree = "<group>"; };
@@ -95,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		130BA39CF9D822815D94745A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				130BA7639AF7D9EA3B6E74C3 /* LoginVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		130BA4BCC819FCD7FEBD0E99 /* masteriosUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +136,7 @@
 				130BA751CD2AC06B17DC8CCE /* Main.storyboard */,
 				130BA4946A4E3B0F9E384C9F /* InitVC.swift */,
 				130BA7A93B1C2238AF1D20A6 /* color.swift */,
+				130BA39CF9D822815D94745A /* Auth */,
 			);
 			path = masterios;
 			sourceTree = "<group>";
@@ -423,6 +436,7 @@
 			files = (
 				130BA5F97163554A7C491B3A /* masteriosUITests.swift in Sources */,
 				130BAA046EBCF7593E5F9E15 /* color.swift in Sources */,
+				130BA150EC39D693067FE486 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +446,7 @@
 			files = (
 				130BAAA34C4B04DC382C99D3 /* masteriosTests.swift in Sources */,
 				130BAAC483BE70B914E70BB9 /* color.swift in Sources */,
+				130BAFB8513404C293B4F97A /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +458,7 @@
 				130BAA236E28EE4E8BD4C8FB /* masterios.xcdatamodeld in Sources */,
 				130BADBBEA3A9985C447E036 /* InitVC.swift in Sources */,
 				130BA0D21B98D743BE0DD693 /* color.swift in Sources */,
+				130BA647699BE8DB18851F68 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
