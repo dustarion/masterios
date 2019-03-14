@@ -7,6 +7,7 @@ target 'masterios' do
 
   # Pods for masterios
 
+  pod 'Hero'
   pod 'Alamofire'
   pod 'GoogleSignIn'
   pod 'Firebase'

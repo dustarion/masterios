@@ -68,6 +68,7 @@ PODS:
   - GoogleUtilities/UserDefaults (5.4.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.1)
+  - Hero (1.4.0)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -79,6 +80,7 @@ DEPENDENCIES:
   - Firebase
   - Firebase/Auth
   - GoogleSignIn
+  - Hero
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -94,6 +96,7 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GoogleUtilities
     - GTMSessionFetcher
+    - Hero
     - nanopb
 
 SPEC CHECKSUMS:
@@ -109,8 +112,9 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GoogleUtilities: fa768ad04b264be250ee9edf9f378ad006f7a560
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: d73f8b1240d0ee14c411411c11b746da76feff15
+PODFILE CHECKSUM: 97fe30d24eacd45896d20223fabd0de0fa4317d6
 
 COCOAPODS: 1.6.1
