@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130BA0D21B98D743BE0DD693 /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7A93B1C2238AF1D20A6 /* color.swift */; };
 		130BA1B9E65171342C97410C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130BA751CD2AC06B17DC8CCE /* Main.storyboard */; };
 		130BA5F97163554A7C491B3A /* masteriosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BACDD85BB5E71CC838E97 /* masteriosUITests.swift */; };
+		130BAA046EBCF7593E5F9E15 /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7A93B1C2238AF1D20A6 /* color.swift */; };
 		130BAA236E28EE4E8BD4C8FB /* masterios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 130BA2DB0AB773C343490D9D /* masterios.xcdatamodeld */; };
 		130BAAA34C4B04DC382C99D3 /* masteriosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA88FF33A8CAB6A03BED0 /* masteriosTests.swift */; };
+		130BAAC483BE70B914E70BB9 /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7A93B1C2238AF1D20A6 /* color.swift */; };
 		130BAC345E88FAE5A4D7F28C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130BAEF682CE0A27966E4124 /* LaunchScreen.storyboard */; };
 		130BAD978643DA0651FD93CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130BA022FB1633798C2AF523 /* Assets.xcassets */; };
 		130BADBBEA3A9985C447E036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA4946A4E3B0F9E384C9F /* ViewController.swift */; };
@@ -47,6 +50,7 @@
 		130BA533B506BB77AF8FA79D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		130BA653116FDFF31CE07455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		130BA69D0E521754E52A19BD /* masteriosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = masteriosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		130BA7A93B1C2238AF1D20A6 /* color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = color.swift; sourceTree = "<group>"; };
 		130BA8729EB10F37241F6EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		130BA88FF33A8CAB6A03BED0 /* masteriosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masteriosTests.swift; sourceTree = "<group>"; };
 		130BAAEBF37F7BDE6AB40EFF /* masterios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = masterios.xcdatamodel; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 				130BA2DB0AB773C343490D9D /* masterios.xcdatamodeld */,
 				130BA751CD2AC06B17DC8CCE /* Main.storyboard */,
 				130BA4946A4E3B0F9E384C9F /* ViewController.swift */,
+				130BA7A93B1C2238AF1D20A6 /* color.swift */,
 			);
 			path = masterios;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				130BA5F97163554A7C491B3A /* masteriosUITests.swift in Sources */,
+				130BAA046EBCF7593E5F9E15 /* color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				130BAAA34C4B04DC382C99D3 /* masteriosTests.swift in Sources */,
+				130BAAC483BE70B914E70BB9 /* color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +436,7 @@
 				130BAEEBC021D20C2945949F /* AppDelegate.swift in Sources */,
 				130BAA236E28EE4E8BD4C8FB /* masterios.xcdatamodeld in Sources */,
 				130BADBBEA3A9985C447E036 /* ViewController.swift in Sources */,
+				130BA0D21B98D743BE0DD693 /* color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
