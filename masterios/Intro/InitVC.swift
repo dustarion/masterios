@@ -34,8 +34,6 @@ class InitVC: UIViewController {
         let NextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FullLogoVC") as! RootVC
         NextVC.hero.modalAnimationType = .fade
         self.hero.replaceViewController(with: NextVC)
-        
-        //FullLogoVC
     }
 
 }

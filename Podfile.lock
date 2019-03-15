@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.8.1)
-  - AnimatedTextInput (0.3.3)
+  - AnimatedTextInput (0.5.5)
   - Firebase (5.18.0):
     - Firebase/Core (= 5.18.0)
   - Firebase/Auth (5.18.0):
@@ -50,23 +50,23 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.2.0)
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
-  - GoogleUtilities/AppDelegateSwizzler (5.4.0):
+  - GoogleUtilities/AppDelegateSwizzler (5.5.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (5.4.0)
-  - GoogleUtilities/Logger (5.4.0):
+  - GoogleUtilities/Environment (5.5.0)
+  - GoogleUtilities/Logger (5.5.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (5.4.0):
+  - GoogleUtilities/MethodSwizzler (5.5.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (5.4.0):
+  - GoogleUtilities/Network (5.5.0):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (5.4.0)"
-  - GoogleUtilities/Reachability (5.4.0):
+  - "GoogleUtilities/NSData+zlib (5.5.0)"
+  - GoogleUtilities/Reachability (5.5.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (5.4.0):
+  - GoogleUtilities/UserDefaults (5.5.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.1)
   - Hero (1.4.0)
@@ -78,7 +78,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - AnimatedTextInput (~> 0.3.0)
+  - AnimatedTextInput
   - Firebase
   - Firebase/Auth
   - GoogleSignIn
@@ -104,7 +104,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
-  AnimatedTextInput: ca74e724c6b6c9d0566bdb0cffa38e476776c70c
+  AnimatedTextInput: aadbdfa5a538a03cc9fbea700b43d2bb21a5d132
   Firebase: 02f3281965c075426141a0ce1277e9de6649cab9
   FirebaseAnalytics: 23851fe602c872130a2c5c55040b302120346cc2
   FirebaseAuth: d85d052354447f30b4b2a805ab91b511458b56a6
@@ -114,11 +114,11 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 6cf307834da065863f9faf4c0de0a936d81dd832
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
-  GoogleUtilities: fa768ad04b264be250ee9edf9f378ad006f7a560
+  GoogleUtilities: 6481e6318c5fcabaaa8513ef8120f329055d7c10
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 7d34bf1b0531b05d72218c599f0a2e2de386c2c7
+PODFILE CHECKSUM: fc163f7df1e2574e74985b2e0bdb5a0923c19e18
 
 COCOAPODS: 1.6.1

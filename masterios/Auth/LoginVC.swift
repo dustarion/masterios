@@ -34,8 +34,19 @@ class LoginVC: UIViewController {
     @IBAction func EmailSignIn(_ sender: Any) {
         // Email Sign In
         print("Email")
-        
+        toEmailLoginVC()
     }
-
+    
+    @IBAction func EmailSignUp(_ sender: Any) {
+    }
+    
+    //EmailLoginVC
+    
+    fileprivate func toEmailLoginVC() {
+        
+        let EmailLoginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EmailLoginVC") as! EmailLoginVC
+        EmailLoginVC.hero.modalAnimationType = .slide(direction: .left)
+        self.hero.replaceViewController(with: EmailLoginVC)
+    }
     
 }
