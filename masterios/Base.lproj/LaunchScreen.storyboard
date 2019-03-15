@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MasterIconWhite" translatesAutoresizingMaskIntoConstraints="NO" id="je9-1W-QsL">
-                                <rect key="frame" x="112.5" y="258.5" width="150" height="150"/>
+                                <rect key="frame" x="152.5" y="298.5" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="CxQ-c7-Cyu"/>
-                                    <constraint firstAttribute="width" constant="150" id="adR-5i-O6t"/>
+                                    <constraint firstAttribute="height" constant="70" id="CxQ-c7-Cyu"/>
+                                    <constraint firstAttribute="width" constant="70" id="adR-5i-O6t"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="je9-1W-QsL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Neu-TB-JOl"/>
                             <constraint firstItem="je9-1W-QsL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RVV-8F-BPv"/>
