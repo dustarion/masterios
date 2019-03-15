@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NFh-gG-3eA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,19 +13,19 @@
         <!--InitVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="InitVC" customModule="masterios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogoVC" id="BYZ-38-t0r" customClass="InitVC" customModule="masterios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MasterIconWhite" translatesAutoresizingMaskIntoConstraints="NO" id="09r-KX-8UL">
-                                <rect key="frame" x="152.5" y="298.5" width="70" height="70"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MasterIconGreenBlue" translatesAutoresizingMaskIntoConstraints="NO" id="dUw-9k-ttk">
+                                <rect key="frame" x="148.5" y="301" width="78" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="u75-vl-dPq"/>
-                                    <constraint firstAttribute="height" constant="70" id="unH-Sv-oYc"/>
+                                    <constraint firstAttribute="width" constant="78" id="4CQ-0w-fNu"/>
+                                    <constraint firstAttribute="height" constant="65" id="5no-pQ-XFP"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="mastericon"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="masterIcon"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -33,33 +33,72 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="09r-KX-8UL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Af-Cd-keQ"/>
-                            <constraint firstItem="09r-KX-8UL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kYW-hY-qBV"/>
+                            <constraint firstItem="dUw-9k-ttk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OzQ-oN-oEr"/>
+                            <constraint firstItem="dUw-9k-ttk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WvC-p6-NlK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <segue destination="NFh-gG-3eA" kind="presentation" identifier="toLogin" modalTransitionStyle="crossDissolve" id="P38-wL-Zvr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79" y="27"/>
+            <point key="canvasLocation" x="-385" y="27"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="ZIc-QM-xY0">
+        <!--RootVC-->
+        <scene sceneID="H7t-fC-Px2">
             <objects>
-                <viewController id="p1j-bf-qAL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="m5z-W8-RRl">
+                <viewController storyboardIdentifier="FullLogoVC" id="3x2-1z-3Od" customClass="RootVC" customModule="masterios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bqc-G7-fVC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MasterIconGreenBlue" translatesAutoresizingMaskIntoConstraints="NO" id="Y2L-jj-ruD">
+                                <rect key="frame" x="38" y="301" width="78" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="biA-FL-jU7"/>
+                                    <constraint firstAttribute="height" constant="65" id="d8G-l7-jZi"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="masterIcon"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="master" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5e-DD-Ypd">
+                                <rect key="frame" x="136" y="297.5" width="200" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="WPD-ih-5kW"/>
+                                    <constraint firstAttribute="height" constant="72" id="tZd-cY-gnq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="60"/>
+                                <color key="textColor" red="0.39331543445587158" green="0.82840055227279663" blue="0.77254819869995117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="r7T-N2-qvS"/>
+                        <constraints>
+                            <constraint firstItem="Y2L-jj-ruD" firstAttribute="centerY" secondItem="bqc-G7-fVC" secondAttribute="centerY" id="1ng-bX-cgU"/>
+                            <constraint firstItem="P5e-DD-Ypd" firstAttribute="centerY" secondItem="bqc-G7-fVC" secondAttribute="centerY" id="JIe-Av-fFC"/>
+                            <constraint firstItem="9ws-Hv-7od" firstAttribute="trailing" secondItem="P5e-DD-Ypd" secondAttribute="trailing" constant="39" id="aEr-ug-MXv"/>
+                            <constraint firstItem="P5e-DD-Ypd" firstAttribute="leading" secondItem="Y2L-jj-ruD" secondAttribute="trailing" constant="20" id="i4a-zs-KYj"/>
+                            <constraint firstItem="Y2L-jj-ruD" firstAttribute="leading" secondItem="9ws-Hv-7od" secondAttribute="leading" constant="38" id="kUg-Gu-TVN"/>
+                            <constraint firstItem="P5e-DD-Ypd" firstAttribute="centerY" secondItem="bqc-G7-fVC" secondAttribute="centerY" id="q0h-cL-G27"/>
+                            <constraint firstItem="P5e-DD-Ypd" firstAttribute="leading" secondItem="Y2L-jj-ruD" secondAttribute="trailing" constant="20" id="qtu-MB-69K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9ws-Hv-7od"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cGJ-o1-MYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RUq-Sh-g9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MasterIconWhite" id="iJ9-rr-Wza">
+                    <rect key="frame" x="0.0" y="0.0" width="78" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="masterIcon"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
             </objects>
-            <point key="canvasLocation" x="1236" y="725"/>
+            <point key="canvasLocation" x="436" y="26.53673163418291"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="lLu-uQ-80b">
@@ -69,67 +108,166 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MasterIconWhite" translatesAutoresizingMaskIntoConstraints="NO" id="an5-3P-Vqp">
-                                <rect key="frame" x="62" y="222" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MasterIconGreenBlue" translatesAutoresizingMaskIntoConstraints="NO" id="nnj-lP-1ew">
+                                <rect key="frame" x="38" y="181" width="78" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="jnq-1p-9DZ"/>
+                                    <constraint firstAttribute="height" constant="66" id="t2x-TY-rMT"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="mastericon"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="masterIcon"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="master" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Od-MA-eUS">
-                                <rect key="frame" x="140" y="222" width="172" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="master" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ru8-sy-t0f">
+                                <rect key="frame" x="136" y="169" width="200" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="C0B-cd-PlY"/>
+                                    <constraint firstAttribute="width" constant="200" id="g7g-eN-aTy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="60"/>
+                                <color key="textColor" red="0.39331543450000001" green="0.82840055229999998" blue="0.77254819870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WELCOME TO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jb-9Y-u72">
-                                <rect key="frame" x="16" y="167" width="343" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcn-YG-cAV">
+                                <rect key="frame" x="101.5" y="138" width="172" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="CZo-t3-mXp"/>
+                                    <constraint firstAttribute="height" constant="35" id="LGa-y5-Hfy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uT-Wk-cyX">
-                                <rect key="frame" x="16" y="345" width="343" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6F-fw-sYZ">
+                                <rect key="frame" x="30" y="332" width="315" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7A7-WN-os4"/>
+                                    <constraint firstAttribute="width" constant="315" id="zMy-HH-RMJ"/>
+                                </constraints>
                                 <state key="normal" image="GoogleSignIn"/>
-                                <connections>
-                                    <action selector="GoogleSignIn:" destination="NFh-gG-3eA" eventType="touchUpInside" id="hax-bd-hts"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovn-Ww-gxr">
-                                <rect key="frame" x="16" y="423" width="343" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pe6-gg-eW2">
+                                <rect key="frame" x="30" y="396" width="315" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="12w-im-bpj"/>
+                                    <constraint firstAttribute="width" constant="315" id="QKw-lQ-Vrr"/>
+                                </constraints>
                                 <state key="normal" image="FacebookSignIn"/>
-                                <connections>
-                                    <action selector="FacebookSignIn:" destination="NFh-gG-3eA" eventType="touchUpInside" id="cal-Jm-PcR"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVg-3w-Pc6">
-                                <rect key="frame" x="16" y="501" width="343" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giH-yq-wls">
+                                <rect key="frame" x="30" y="460" width="315" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="P1f-oe-QD9"/>
+                                    <constraint firstAttribute="width" constant="315" id="aky-La-ccX"/>
+                                </constraints>
                                 <state key="normal" image="EmailSignIn"/>
-                                <connections>
-                                    <action selector="EmailSignIn:" destination="NFh-gG-3eA" eventType="touchUpInside" id="5gR-0i-l2P"/>
-                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udr-0E-WHE">
+                                <rect key="frame" x="239" y="530" width="62" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="G7c-9e-YNj"/>
+                                    <constraint firstAttribute="width" constant="62" id="nxX-1A-kwh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.91873389482498169" green="0.2694014310836792" blue="0.35292750597000122" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qk-yg-bxW">
+                                <rect key="frame" x="74" y="538" width="161" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="tkw-e4-yax"/>
+                                    <constraint firstAttribute="width" constant="161" id="wUM-MP-Xr9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ru8-sy-t0f" firstAttribute="leading" secondItem="nnj-lP-1ew" secondAttribute="trailing" constant="20" id="0br-fF-52T"/>
+                            <constraint firstItem="aaZ-LV-F7i" firstAttribute="trailing" secondItem="gcn-YG-cAV" secondAttribute="trailing" constant="101.5" id="2P1-Qq-54p"/>
+                            <constraint firstItem="gcn-YG-cAV" firstAttribute="top" secondItem="aaZ-LV-F7i" secondAttribute="top" constant="118" id="3X4-6u-iha"/>
+                            <constraint firstItem="udr-0E-WHE" firstAttribute="top" secondItem="giH-yq-wls" secondAttribute="bottom" constant="26" id="9jo-KD-FSg"/>
+                            <constraint firstItem="udr-0E-WHE" firstAttribute="leading" secondItem="6qk-yg-bxW" secondAttribute="trailing" constant="4" id="Afw-Hc-Itp"/>
+                            <constraint firstItem="b6F-fw-sYZ" firstAttribute="top" secondItem="ru8-sy-t0f" secondAttribute="bottom" constant="81" id="DMC-P1-shd"/>
+                            <constraint firstItem="giH-yq-wls" firstAttribute="top" secondItem="Pe6-gg-eW2" secondAttribute="bottom" constant="20" id="KeQ-0s-pij"/>
+                            <constraint firstItem="Pe6-gg-eW2" firstAttribute="centerX" secondItem="YlD-G0-tab" secondAttribute="centerX" id="MYs-xk-du3"/>
+                            <constraint firstItem="nnj-lP-1ew" firstAttribute="top" secondItem="gcn-YG-cAV" secondAttribute="bottom" constant="8" id="N9R-0z-OZq"/>
+                            <constraint firstItem="aaZ-LV-F7i" firstAttribute="trailing" secondItem="ru8-sy-t0f" secondAttribute="trailing" constant="39" id="Qoe-46-IKW"/>
+                            <constraint firstItem="b6F-fw-sYZ" firstAttribute="leading" secondItem="aaZ-LV-F7i" secondAttribute="leading" constant="30" id="Rdn-wr-B9t"/>
+                            <constraint firstItem="gcn-YG-cAV" firstAttribute="centerX" secondItem="YlD-G0-tab" secondAttribute="centerX" id="RqV-xI-VO2"/>
+                            <constraint firstItem="aaZ-LV-F7i" firstAttribute="trailing" secondItem="giH-yq-wls" secondAttribute="trailing" constant="30" id="TWW-2H-6EQ"/>
+                            <constraint firstItem="aaZ-LV-F7i" firstAttribute="trailing" secondItem="Pe6-gg-eW2" secondAttribute="trailing" constant="30" id="X7g-kX-hJu"/>
+                            <constraint firstItem="Pe6-gg-eW2" firstAttribute="leading" secondItem="aaZ-LV-F7i" secondAttribute="leading" constant="30" id="aq3-ug-bDe"/>
+                            <constraint firstItem="giH-yq-wls" firstAttribute="centerX" secondItem="YlD-G0-tab" secondAttribute="centerX" id="bCr-Yv-phS"/>
+                            <constraint firstItem="udr-0E-WHE" firstAttribute="leading" secondItem="6qk-yg-bxW" secondAttribute="trailing" constant="4" id="eN9-A3-tuh"/>
+                            <constraint firstItem="b6F-fw-sYZ" firstAttribute="centerX" secondItem="YlD-G0-tab" secondAttribute="centerX" id="gaq-1G-Kb9"/>
+                            <constraint firstItem="giH-yq-wls" firstAttribute="leading" secondItem="aaZ-LV-F7i" secondAttribute="leading" constant="30" id="glL-yh-WiY"/>
+                            <constraint firstItem="aaZ-LV-F7i" firstAttribute="trailing" secondItem="b6F-fw-sYZ" secondAttribute="trailing" constant="30" id="iVc-WX-yOV"/>
+                            <constraint firstItem="6qk-yg-bxW" firstAttribute="leading" secondItem="aaZ-LV-F7i" secondAttribute="leading" constant="74" id="n16-Hi-14h"/>
+                            <constraint firstItem="nnj-lP-1ew" firstAttribute="leading" secondItem="aaZ-LV-F7i" secondAttribute="leading" constant="38" id="neX-SO-opi"/>
+                            <constraint firstItem="gcn-YG-cAV" firstAttribute="leading" secondItem="aaZ-LV-F7i" secondAttribute="leading" constant="101.5" id="qN4-CU-MQT"/>
+                            <constraint firstItem="b6F-fw-sYZ" firstAttribute="top" secondItem="ru8-sy-t0f" secondAttribute="bottom" constant="81" id="qbQ-7Q-YsS"/>
+                            <constraint firstItem="b6F-fw-sYZ" firstAttribute="top" secondItem="nnj-lP-1ew" secondAttribute="bottom" constant="85" id="syl-Du-ZE7"/>
+                            <constraint firstItem="aaZ-LV-F7i" firstAttribute="trailing" secondItem="udr-0E-WHE" secondAttribute="trailing" constant="74" id="tGF-wr-ti3"/>
+                            <constraint firstItem="ru8-sy-t0f" firstAttribute="leading" secondItem="nnj-lP-1ew" secondAttribute="trailing" constant="20" id="u0Z-ku-lud"/>
+                            <constraint firstItem="6qk-yg-bxW" firstAttribute="top" secondItem="giH-yq-wls" secondAttribute="bottom" constant="34" id="u6E-tr-v6E"/>
+                            <constraint firstItem="Pe6-gg-eW2" firstAttribute="top" secondItem="b6F-fw-sYZ" secondAttribute="bottom" constant="20" id="z8t-t8-Esc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aaZ-LV-F7i"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kei-te-9yp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MasterIconGreenBlue" translatesAutoresizingMaskIntoConstraints="NO" id="GcB-ei-afC">
+                    <rect key="frame" x="0.0" y="0.0" width="78" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="Y8s-B3-xJg"/>
+                        <constraint firstAttribute="width" constant="78" id="lAK-1r-5J9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="masterIcon"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabledForSubviews" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="master" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5g-MD-uiP">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="hqu-YC-jaq"/>
+                        <constraint firstAttribute="width" constant="200" id="zPw-yp-vhV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="60"/>
+                    <color key="textColor" red="0.39331543450000001" green="0.82840055229999998" blue="0.77254819870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </objects>
             <point key="canvasLocation" x="1236" y="27"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="1Yb-e0-ZNC">
+            <objects>
+                <viewController id="lBL-zm-57P" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KjU-aR-l7c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vbi-u5-lNK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Du-wH-ZeK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2137" y="27"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="EmailSignIn" width="357" height="74"/>
-        <image name="FacebookSignIn" width="357" height="74"/>
-        <image name="GoogleSignIn" width="357" height="74"/>
+        <image name="EmailSignIn" width="315" height="44"/>
+        <image name="FacebookSignIn" width="315" height="44"/>
+        <image name="GoogleSignIn" width="315" height="44"/>
+        <image name="MasterIconGreenBlue" width="78" height="66"/>
         <image name="MasterIconWhite" width="445" height="371"/>
     </resources>
 </document>

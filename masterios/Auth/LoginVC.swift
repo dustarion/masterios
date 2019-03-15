@@ -3,7 +3,6 @@
 // Copyright (c) 2019 masterapp. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import Hero
 import Alamofire

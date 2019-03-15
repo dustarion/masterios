@@ -31,9 +31,11 @@ class InitVC: UIViewController {
     }
     
     fileprivate func toLoginVC() {
-        self.performSegue(withIdentifier: "toLogin", sender: self)
+        let NextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FullLogoVC") as! RootVC
+        NextVC.hero.modalAnimationType = .fade
+        self.hero.replaceViewController(with: NextVC)
         
-        
+        //FullLogoVC
     }
 
 }

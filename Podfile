@@ -6,12 +6,21 @@ target 'masterios' do
   use_frameworks!
 
   # Pods for masterios
-
-  pod 'Hero'
+  
   pod 'Alamofire'
   pod 'GoogleSignIn'
   pod 'Firebase'
-  pod 'Firebase/Auth'  
+  pod 'Firebase/Auth'
+  
+  # Animation
+  pod 'Hero'
+  
+  # Textfields
+  pod 'AnimatedTextInput', '~> 0.3.0'
+
+  
+  
+  
 
   target 'masteriosTests' do
     inherit! :search_paths

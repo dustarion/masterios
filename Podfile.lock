@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.1)
+  - AnimatedTextInput (0.3.3)
   - Firebase (5.18.0):
     - Firebase/Core (= 5.18.0)
   - Firebase/Auth (5.18.0):
@@ -77,6 +78,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AnimatedTextInput (~> 0.3.0)
   - Firebase
   - Firebase/Auth
   - GoogleSignIn
@@ -85,6 +87,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - AnimatedTextInput
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -101,6 +104,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AnimatedTextInput: ca74e724c6b6c9d0566bdb0cffa38e476776c70c
   Firebase: 02f3281965c075426141a0ce1277e9de6649cab9
   FirebaseAnalytics: 23851fe602c872130a2c5c55040b302120346cc2
   FirebaseAuth: d85d052354447f30b4b2a805ab91b511458b56a6
@@ -115,6 +119,6 @@ SPEC CHECKSUMS:
   Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 97fe30d24eacd45896d20223fabd0de0fa4317d6
+PODFILE CHECKSUM: 7d34bf1b0531b05d72218c599f0a2e2de386c2c7
 
 COCOAPODS: 1.6.1
