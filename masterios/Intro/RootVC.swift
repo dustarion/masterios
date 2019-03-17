@@ -8,5 +8,18 @@
 
 import UIKit
 class RootVC: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        hero.isEnabled = true
+    }
     
+    override func viewDidAppear(_ animated: Bool) {
+        toLoginVC()
+    }
+    
+    fileprivate func toLoginVC() {
+        let NextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+        NextVC.hero.modalAnimationType = .fade
+        self.hero.replaceViewController(with: NextVC)
+    }
 }

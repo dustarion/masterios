@@ -16,7 +16,7 @@ target 'masterios' do
   pod 'Hero'
   
   # Textfields
-  pod 'AnimatedTextInput'
+  #pod 'AnimatedTextInput'
 
   
   
