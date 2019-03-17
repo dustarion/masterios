@@ -15,8 +15,11 @@ target 'masterios' do
   # Animation
   pod 'Hero'
   
-  # Textfields
-  #pod 'AnimatedTextInput'
+  # Tab Bar
+  #pod 'CircleBar'
+  
+  # Icons
+  # pod 'SwiftIcons', '~> 2.3.2'
 
   
   
