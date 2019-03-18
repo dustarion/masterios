@@ -8,25 +8,105 @@
 
 import UIKit
 import CoreData
+import GoogleSignIn
 import Firebase
-
+import FirebaseAuth
+import Alamofire
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
   var window: UIWindow?
 
+  func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+    if let error = error {
+      let errorDict: [String: Error] = ["error": error]
+      NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
+      return
+    }
+    guard let authentication = user.authentication else {
+      return
+    }
+    let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+      accessToken: authentication.accessToken)
+    Auth.auth().signIn(with: credential) { res, error in
+      if let error = error {
+        let errorDict: [String: Error] = ["error": error]
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
+        return
+      }
+      guard let uid = res?.uid else {
+        return
+      }
+      guard let e = res?.email else {
+        return
+      }
+      let parameters: Parameters = [
+        "uid": uid,
+        "e": e
+      ]
+      Alamofire.request(getURL("/auth/signIn"), method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseJSON { res in
+        switch res.result {
+        case .success:
+          if let result = res.result.value {
+            let JSON = result as! NSDictionary
+            guard var p = JSON["pfp"] else {return}
+            guard var t = JSON["token"] else {return}
+            var pfp: URL?
+            var p2: String?
+            var token: String?
+            do {
+               p2 = p as! String
+               token = t as! String
+            } catch {
+              let errorDict: [String: Error] = ["error": error]
+              NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
+            }
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            let entity = NSEntityDescription.entity(forEntityName: "User", in: context)
+            let user = NSManagedObject(entity: entity!, insertInto: context)
+            if p2 == "/static/fadedBar.png" {
+              pfp = URL(string: "https://master.cx/static/fadedBar.png")
+            } else {
+              pfp = URL(string: p2!)
+            }
+            user.setValue(token, forKey: "token")
+            user.setValue(pfp, forKey: "pfp")
+            do {
+              try context.save()
+            } catch {
+              let errorDict: [String: Error] = ["error": error]
+              NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
+            }
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDSUCCESS.rawValue), object: nil)
+          }
+          return
+        case .failure(let error):
+          let errorDict: [String: Error] = ["error": error]
+          NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
+        }
+      }
+    }
+  }
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-    
+
     // Firebase Setup
     FirebaseApp.configure()
-    
-    
+    GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+    GIDSignIn.sharedInstance().delegate = self
     return true
   }
 
+  @available(iOS 9.0, *)
+  func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any])
+      -> Bool {
+    return GIDSignIn.sharedInstance().handle(url,
+      sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+      annotation: [:])
+  }
 
   func applicationWillResignActive(_ application: UIApplication) {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

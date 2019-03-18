@@ -11,6 +11,7 @@ target 'masterios' do
   pod 'GoogleSignIn'
   pod 'Firebase'
   pod 'Firebase/Auth'
+  pod 'FBSDKLoginKit'
   
   # Animation
   pod 'Hero'
