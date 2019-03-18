@@ -18,7 +18,7 @@ class InitVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        toLoginVC()
+        setup()
     }
     
     fileprivate func setup() {
@@ -26,8 +26,13 @@ class InitVC: UIViewController {
         // Redirect to Login Screen or into the app approriately.
         // Later on we can add better onboarding experience but not a priority for now.
         
-        // Go to Login, Temporary Test Code
-        toLoginVC()
+        
+        
+        // Go to Login
+        //toLoginVC()
+        
+        // Go to Main
+        toMainVC()
     }
     
     fileprivate func toLoginVC() {
@@ -35,5 +40,12 @@ class InitVC: UIViewController {
         NextVC.hero.modalAnimationType = .fade
         self.hero.replaceViewController(with: NextVC)
     }
+    
+    fileprivate func toMainVC() {
+        let NextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabController") as! UITabBarController
+        NextVC.hero.modalAnimationType = .fade
+        self.hero.replaceViewController(with: NextVC)
+    }
 
 }
+//MainTabController
