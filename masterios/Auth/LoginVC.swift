@@ -6,12 +6,25 @@
 import UIKit
 import Hero
 import Alamofire
+import GoogleSignIn
 
-class LoginVC: UIViewController {
+class LoginVC: UIViewController, GIDSignInUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
+        setListeners()
+        GIDSignIn.sharedInstance().uiDelegate = self
         hero.isEnabled = true
         setupViews()
+    }
+
+    @objc fileprivate func handleLoginError(_ notification: NSNotification) {
+        if let error = notification.userInfo?["error"] as? Error {
+            print(error.localizedDescription)
+        }
+    }
+
+    fileprivate func setListeners() {
+        NotificationCenter.default.addObserver(self, selector: #selector(handleLoginError(_:)), name: NSNotification.Name(rawValue: Errors.GIDLOGINERROR.rawValue), object: nil)
     }
 
     fileprivate func setupViews() {
@@ -21,7 +34,10 @@ class LoginVC: UIViewController {
     @IBAction func GoogleSignIn(_ sender: Any) {
         // Google Sign In
         print("Google")
-
+        if GIDSignIn.sharedInstance().currentUser != nil {
+            GIDSignIn.sharedInstance().signOut()
+        }
+        GIDSignIn.sharedInstance().signIn()
     }
 
     @IBAction func FacebookSignIn(_ sender: Any) {

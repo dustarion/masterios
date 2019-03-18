@@ -8,25 +8,41 @@
 
 import UIKit
 import CoreData
+import GoogleSignIn
 import Firebase
-
+import FirebaseAuth
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInUIDelegate, GIDSignInDelegate {
 
   var window: UIWindow?
 
+  func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+    if let error = error {
+      let errorDict: [String: Error] = ["error": error]
+      NotificationCenter.default.post(name: NSNotification.Name(rawValue: Errors.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
+      return
+    }
+  }
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-    
+
     // Firebase Setup
     FirebaseApp.configure()
-    
-    
+    GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+    GIDSignIn.sharedInstance().delegate = self
+
     return true
   }
 
+  @available(iOS 9.0, *)
+  func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any])
+      -> Bool {
+    return GIDSignIn.sharedInstance().handle(url,
+      sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+      annotation: [:])
+  }
 
   func applicationWillResignActive(_ application: UIApplication) {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

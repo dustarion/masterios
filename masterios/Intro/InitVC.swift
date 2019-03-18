@@ -29,10 +29,10 @@ class InitVC: UIViewController {
         
         
         // Go to Login
-        //toLoginVC()
+        toLoginVC()
         
         // Go to Main
-        toMainVC()
+//        toMainVC()
     }
     
     fileprivate func toLoginVC() {
