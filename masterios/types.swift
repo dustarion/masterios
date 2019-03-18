@@ -12,6 +12,6 @@ public enum Login: String {
 }
 
 public func getURL(_ path: String) -> URL {
-  let p = "https://master.cx" + path
+  let p = "http://localhost:8080" + path
   return URL(string: p)!
 }

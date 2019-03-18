@@ -11,6 +11,7 @@ import CoreData
 import GoogleSignIn
 import Firebase
 import FirebaseAuth
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -23,7 +24,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
       NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
       return
     }
-
+    guard let authentication = user.authentication else {
+      return
+    }
+    let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+      accessToken: authentication.accessToken)
+    Auth.auth().signIn(with: credential) { res, error in
+      if let error = error {
+        let errorDict: [String: Error] = ["error": error]
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
+        return
+      }
+      guard let uid = res?.uid else {return}
+      guard let e = res?.email else {return}
+      let parameters: Parameters = [
+        "uid": uid,
+        "e": e
+      ]
+      Alamofire.request(getURL("/auth/signIn"), method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { res in
+        if let result = res.result.value {
+          let JSON = result as! NSDictionary
+          print(JSON["pfp"])
+        }
+      }
+      let appDelegate = UIApplication.shared.delegate as! AppDelegate
+      let context = appDelegate.persistentContainer.viewContext
+      let entity = NSEntityDescription.entity(forEntityName: "User", in: context)
+      let user = NSManagedObject(entity: entity!, insertInto: context)
+      user.setValue("fuck", forKey: "token")
+      do {
+        try context.save()
+      } catch {
+        let errorDict: [String: String] = ["error": "Error saving user info to device"]
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
+      }
+    }
   }
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
