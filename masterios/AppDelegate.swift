@@ -13,16 +13,17 @@ import Firebase
 import FirebaseAuth
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInUIDelegate, GIDSignInDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
   var window: UIWindow?
 
   func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
     if let error = error {
       let errorDict: [String: Error] = ["error": error]
-      NotificationCenter.default.post(name: NSNotification.Name(rawValue: Errors.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
+      NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
       return
     }
+
   }
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -32,7 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInUIDelegate, GIDS
     FirebaseApp.configure()
     GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
     GIDSignIn.sharedInstance().delegate = self
-
     return true
   }
 

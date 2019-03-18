@@ -5,6 +5,13 @@
 
 import Foundation
 
-public enum Errors: String {
+public enum Login: String {
+  case GIDSUCCESS = "GIDSUCCESS"
   case GIDLOGINERROR = "GIDLOGINERROR"
+  case SIGNEDIN = "SIGNEDIN"
+}
+
+public func getURL(_ path: String) -> URL {
+  let p = "https://master.cx" + path
+  return URL(string: p)!
 }
