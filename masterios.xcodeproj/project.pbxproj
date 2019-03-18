@@ -28,6 +28,7 @@
 		4996812A223C11840009947B /* EmailSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49968129223C11840009947B /* EmailSignupVC.swift */; };
 		4996812C223C11920009947B /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996812B223C11920009947B /* ForgotPasswordVC.swift */; };
 		4996812E223C23D10009947B /* ui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996812D223C23D10009947B /* ui.swift */; };
+		49E527A2223F65E10014970E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49E527A1223F65E10014970E /* GoogleService-Info.plist */; };
 		8884F7F6A7C93C1F0C9625F0 /* Pods_masterios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44057DA5C74DE57AA23FC0D /* Pods_masterios.framework */; };
 		FDDBA9E73E45EBCD350F3EB7 /* Pods_masteriosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7CCA9FB7B0942AAA7AB588 /* Pods_masteriosTests.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		49968129223C11840009947B /* EmailSignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignupVC.swift; sourceTree = "<group>"; };
 		4996812B223C11920009947B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		4996812D223C23D10009947B /* ui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ui.swift; sourceTree = "<group>"; };
+		49E527A1223F65E10014970E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5F7CCA9FB7B0942AAA7AB588 /* Pods_masteriosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_masteriosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		600A6B4DCE80A8CE3103AB76 /* Pods-masteriosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masteriosUITests.release.xcconfig"; path = "Target Support Files/Pods-masteriosUITests/Pods-masteriosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		814E5284691F70674E507A80 /* Pods-masteriosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masteriosTests.debug.xcconfig"; path = "Target Support Files/Pods-masteriosTests/Pods-masteriosTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		130BA849754056FAB275FB90 /* masterios */ = {
 			isa = PBXGroup;
 			children = (
+				49E527A1223F65E10014970E /* GoogleService-Info.plist */,
 				130BAE65CB99FA7B78AD9591 /* Info.plist */,
 				130BA022FB1633798C2AF523 /* Assets.xcassets */,
 				130BAEF682CE0A27966E4124 /* LaunchScreen.storyboard */,
@@ -323,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				130BAD978643DA0651FD93CB /* Assets.xcassets in Resources */,
+				49E527A2223F65E10014970E /* GoogleService-Info.plist in Resources */,
 				130BAC345E88FAE5A4D7F28C /* LaunchScreen.storyboard in Resources */,
 				130BA1B9E65171342C97410C /* Main.storyboard in Resources */,
 			);
