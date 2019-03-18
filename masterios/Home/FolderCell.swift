@@ -17,7 +17,7 @@ class FolderCell: UITableViewCell {
     // Variables
     var folders : [MasterFolder] = [MasterFolder]()
     
-    var folderViews :
+//    var folderViews :
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,6 +25,8 @@ class FolderCell: UITableViewCell {
         removeBackground()
         createSetsArray()
         createFolder(x: 10.0, title: "Chemistry")
+        createFolder(x: 268.0, title: "Chemistry")
+        //createFolder(x: 466.0, title: "Chemistry")
     }
     
     fileprivate func removeBackground() {

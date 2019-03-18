@@ -180,15 +180,20 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="md1-rK-Bwz">
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="md1-rK-Bwz">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </scrollView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="md1-rK-Bwz" firstAttribute="top" secondItem="fzB-Ga-rdE" secondAttribute="top" id="AFo-df-Mfn"/>
+                                        <constraint firstAttribute="trailing" secondItem="md1-rK-Bwz" secondAttribute="trailing" id="G1v-g2-Lgw"/>
                                         <constraint firstAttribute="bottom" secondItem="md1-rK-Bwz" secondAttribute="bottom" id="On8-pX-c1O"/>
+                                        <constraint firstItem="md1-rK-Bwz" firstAttribute="top" secondItem="fzB-Ga-rdE" secondAttribute="top" id="PSL-kJ-fF5"/>
                                         <constraint firstAttribute="trailing" secondItem="md1-rK-Bwz" secondAttribute="trailing" id="Ygb-xC-9ZQ"/>
                                         <constraint firstItem="md1-rK-Bwz" firstAttribute="leading" secondItem="fzB-Ga-rdE" secondAttribute="leading" id="aJH-hR-fft"/>
+                                        <constraint firstAttribute="bottom" secondItem="md1-rK-Bwz" secondAttribute="bottom" id="cYY-ec-liU"/>
+                                        <constraint firstItem="md1-rK-Bwz" firstAttribute="leading" secondItem="fzB-Ga-rdE" secondAttribute="leading" id="tfP-Tj-i4Q"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
