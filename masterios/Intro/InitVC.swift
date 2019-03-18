@@ -27,16 +27,13 @@ class InitVC: UIViewController {
     // Later on we can add better onboarding experience but not a priority for now.
 
     let usersigninstatus = UserDefaults.standard.bool(forKey: Login.SIGNEDIN.rawValue)
+    print(usersigninstatus)
     switch usersigninstatus {
     case true:
       toMainVC()
     default:
       toLoginVC()
     }
-
-    // Go to Login
-    toLoginVC()
-
     // Go to Main
 //        toMainVC()
   }

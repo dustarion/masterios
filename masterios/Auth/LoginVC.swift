@@ -25,7 +25,7 @@ class LoginVC: UIViewController, GIDSignInUIDelegate {
 
   fileprivate func setListeners() {
     NotificationCenter.default.addObserver(self, selector: #selector(handleLoginError(_:)), name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil)
-    NotificationCenter.default.addObserver(self, selector: #selector(toHomeVC), name: NSNotification.Name(rawValue: Login.GIDSUCCESS.rawValue), object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(toMainVC), name: NSNotification.Name(rawValue: Login.GIDSUCCESS.rawValue), object: nil)
   }
 
   fileprivate func setupViews() {
@@ -36,9 +36,6 @@ class LoginVC: UIViewController, GIDSignInUIDelegate {
   @IBAction func GoogleSignIn(_ sender: Any) {
     // Google Sign In
     print("Google")
-    if GIDSignIn.sharedInstance().currentUser != nil {
-      GIDSignIn.sharedInstance().signOut()
-    }
     GIDSignIn.sharedInstance().signIn()
   }
 
@@ -70,7 +67,10 @@ class LoginVC: UIViewController, GIDSignInUIDelegate {
     self.hero.replaceViewController(with: SignupVC)
   }
 
-  @objc fileprivate func toHomeVC() {
-    print("tohome")
+  @objc fileprivate func toMainVC() {
+    UserDefaults.standard.set(true, forKey: Login.SIGNEDIN.rawValue)
+    let NextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabController") as! UITabBarController
+    NextVC.hero.modalAnimationType = .fade
+    self.hero.replaceViewController(with: NextVC)
   }
 }

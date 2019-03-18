@@ -35,28 +35,57 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
         return
       }
-      guard let uid = res?.uid else {return}
-      guard let e = res?.email else {return}
+      guard let uid = res?.uid else {
+        return
+      }
+      guard let e = res?.email else {
+        return
+      }
       let parameters: Parameters = [
         "uid": uid,
         "e": e
       ]
-      Alamofire.request(getURL("/auth/signIn"), method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { res in
-        if let result = res.result.value {
-          let JSON = result as! NSDictionary
-          print(JSON["pfp"])
+      Alamofire.request(getURL("/auth/signIn"), method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseJSON { res in
+        switch res.result {
+        case .success:
+          if let result = res.result.value {
+            let JSON = result as! NSDictionary
+            guard var p = JSON["pfp"] else {return}
+            guard var t = JSON["token"] else {return}
+            var pfp: URL?
+            var p2: String?
+            var token: String?
+            do {
+               p2 = p as! String
+               token = t as! String
+            } catch {
+              let errorDict: [String: Error] = ["error": error]
+              NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
+            }
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            let entity = NSEntityDescription.entity(forEntityName: "User", in: context)
+            let user = NSManagedObject(entity: entity!, insertInto: context)
+            if p2 == "/static/fadedBar.png" {
+              pfp = URL(string: "https://master.cx/static/fadedBar.png")
+            } else {
+              pfp = URL(string: p2!)
+            }
+            user.setValue(token, forKey: "token")
+            user.setValue(pfp, forKey: "pfp")
+            do {
+              try context.save()
+            } catch {
+              let errorDict: [String: Error] = ["error": error]
+              NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
+            }
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDSUCCESS.rawValue), object: nil)
+          }
+          return
+        case .failure(let error):
+          let errorDict: [String: Error] = ["error": error]
+          NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
         }
-      }
-      let appDelegate = UIApplication.shared.delegate as! AppDelegate
-      let context = appDelegate.persistentContainer.viewContext
-      let entity = NSEntityDescription.entity(forEntityName: "User", in: context)
-      let user = NSManagedObject(entity: entity!, insertInto: context)
-      user.setValue("fuck", forKey: "token")
-      do {
-        try context.save()
-      } catch {
-        let errorDict: [String: String] = ["error": "Error saving user info to device"]
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: Login.GIDLOGINERROR.rawValue), object: nil, userInfo: errorDict)
       }
     }
   }
