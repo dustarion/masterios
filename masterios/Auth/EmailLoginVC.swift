@@ -21,7 +21,11 @@ class EmailLoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTextfields()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        EmailTextField.backgroundColor = .black
+        PasswordTextField.backgroundColor = .black
     }
     
     // Ui Setup Code for the Textfields
@@ -84,14 +88,14 @@ class EmailLoginVC: UIViewController {
     }
     
     fileprivate func toSignupVC() {
-        let SignupVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EmailSignupVC") as! EmailSignupVC
+        let SignupVC = AppStoryboard.Login.instance.instantiateViewController(withIdentifier: "EmailSignupVC") as! EmailSignupVC
         SignupVC.hero.modalAnimationType = .fade
         self.hero.replaceViewController(with: SignupVC)
     }
     
     // Transitions back to the main LoginVC
     fileprivate func toLoginVC() {
-        let LoginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+        let LoginVC = AppStoryboard.Login.instance.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
         LoginVC.hero.modalAnimationType = .slide(direction: .right)
         self.hero.replaceViewController(with: LoginVC)
   }

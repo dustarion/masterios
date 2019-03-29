@@ -56,20 +56,20 @@ class LoginVC: UIViewController, GIDSignInUIDelegate {
   }
 
   fileprivate func toEmailLoginVC() {
-    let EmailLoginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EmailLoginVC") as! EmailLoginVC
+    let EmailLoginVC = AppStoryboard.Login.instance.instantiateViewController(withIdentifier: "EmailLoginVC") as! EmailLoginVC
     EmailLoginVC.hero.modalAnimationType = .slide(direction: .left)
     self.hero.replaceViewController(with: EmailLoginVC)
   }
 
   fileprivate func toEmailSignupVC() {
-    let SignupVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EmailSignupVC") as! EmailSignupVC
+    let SignupVC = AppStoryboard.Login.instance.instantiateViewController(withIdentifier: "EmailSignupVC") as! EmailSignupVC
     SignupVC.hero.modalAnimationType = .fade
     self.hero.replaceViewController(with: SignupVC)
   }
 
   @objc fileprivate func toMainVC() {
     UserDefaults.standard.set(true, forKey: Login.SIGNEDIN.rawValue)
-    let NextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabController") as! UITabBarController
+    let NextVC = AppStoryboard.Main.instance.instantiateViewController(withIdentifier: "MainTabController") as! UITabBarController
     NextVC.hero.modalAnimationType = .fade
     self.hero.replaceViewController(with: NextVC)
   }

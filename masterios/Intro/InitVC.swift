@@ -18,7 +18,13 @@ class InitVC: UIViewController {
   }
 
   override func viewDidAppear(_ animated: Bool) {
-    setup()
+    
+    // Just for testing uncomment setup Later!
+    if SKIPLOGIN {
+        toMainVC()
+    } else {
+        setup()
+    }
   }
 
   fileprivate func setup() {
@@ -34,22 +40,22 @@ class InitVC: UIViewController {
     default:
       toLoginVC()
     }
-    // Go to Main
-//        toMainVC()
+    
   }
 
   fileprivate func toLoginVC() {
-    let NextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FullLogoVC") as! RootVC
+    let NextVC = AppStoryboard.Login.instance.instantiateViewController(withIdentifier: "FullLogoVC") as! RootVC
     NextVC.hero.modalAnimationType = .fade
     self.hero.replaceViewController(with: NextVC)
   }
 
   fileprivate func toMainVC() {
-    let NextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabController") as! UITabBarController
+    let NextVC = AppStoryboard.Main.instance.instantiateViewController(withIdentifier: "MainTabController") as! UITabBarController
+    
+    
+    
     NextVC.hero.modalAnimationType = .fade
     self.hero.replaceViewController(with: NextVC)
   }
 
 }
-
-//MainTabController

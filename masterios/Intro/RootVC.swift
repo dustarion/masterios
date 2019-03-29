@@ -18,7 +18,7 @@ class RootVC: UIViewController {
     }
     
     fileprivate func toLoginVC() {
-        let NextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+        let NextVC = AppStoryboard.Login.instance.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
         NextVC.hero.modalAnimationType = .fade
         self.hero.replaceViewController(with: NextVC)
     }
