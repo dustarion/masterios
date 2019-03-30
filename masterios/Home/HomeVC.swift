@@ -36,12 +36,12 @@ class HomeVC: UITableViewController {
     fileprivate func dummyData() {
         
         // Dummy Data for Folders
-        for _ in 0...10 {
-            folders.append(MasterFolder(title: "Rocket Science"))
+        for _ in 0...20 {
+            folders.append(MasterFolder(title: "Rocket Science", setCount: 23))
         }
         
         // Dummy Data for Sets
-        for _ in 0...10 {
+        for _ in 0...20 {
             sets.append(MasterSet(title: "THE BASIC PSYCHOLOGY of HUMAN BEINGS", percentage: "40"))
         }
         
@@ -57,8 +57,7 @@ class HomeVC: UITableViewController {
     
     // Height For Row
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        //return UITableView.automaticDimension
-        return 130
+        return (UITableView.automaticDimension >= 130) ? (UITableView.automaticDimension) : (130)
     }
     
     // Number Of Sections
@@ -71,10 +70,11 @@ class HomeVC: UITableViewController {
         let index = indexPath.row
         
         // Folder
-        //if index == 0 {
-        //let cell = tableView.dequeueReusableCell(withIdentifier: FolderCellId, for: indexPath) as! FolderCell
-        //return cell
-        //}
+        if (index%2 == 0) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: FolderCellId, for: indexPath) as! FolderCellTableViewCell
+            cell.updateData(title: folders[index].title, setCount: folders[index].setCount)
+            return cell
+        }
         
         // Normal Set
         let cell = tableView.dequeueReusableCell(withIdentifier: SetCellId, for: indexPath) as! SetCellTableViewCell
@@ -91,17 +91,4 @@ class HomeVC: UITableViewController {
     }
     
     
-}
-
-// Set Struct
-struct MasterSet {
-    var title : String
-    var percentage : String
-}
-
-// Set Struct
-struct MasterFolder {
-    var title : String
-    //var id : String?
-    // @Qinguan -- Code/Whatver you need here
 }
