@@ -32,7 +32,7 @@
             </objects>
             <point key="canvasLocation" x="1313" y="610"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile-->
         <scene sceneID="tTz-76-N8Q">
             <objects>
                 <viewController id="yyM-cl-4St" sceneMemberID="viewController">
@@ -42,15 +42,13 @@
                         <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="Pyi-sM-UMM"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="user" id="JFX-Ai-Auu">
-                        <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Profile" image="user" id="JFX-Ai-Auu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Na1-I0-vUM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="436" y="1377"/>
         </scene>
-        <!--View Controller-->
+        <!--New-->
         <scene sceneID="dwe-q5-RE3">
             <objects>
                 <viewController id="2tP-5b-lwG" sceneMemberID="viewController">
@@ -60,27 +58,55 @@
                         <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Lc-ry-zVx"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="pen" id="m3e-WP-6nF">
-                        <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
+                    <tabBarItem key="tabBarItem" title="New" image="pen" id="m3e-WP-6nF">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-9"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gp1-g3-JR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2182" y="1377"/>
         </scene>
-        <!--HOME-->
+        <!--Home-->
         <scene sceneID="X9z-3B-vCJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jqU-L0-8D5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="2jo-Ov-bxT" customClass="HomeVC" customModule="masterios" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ED5-zb-ZyX">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ED5-zb-ZyX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.97254901959999995" green="0.90588235289999997" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SetCell" rowHeight="130" id="ug2-Ks-dnK" customClass="SetCellTableViewCell" customModule="masterios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="130"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HeaderCell" id="m1j-EZ-hao" customClass="HeaderCellTableViewCell" customModule="masterios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.333333333333343" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m1j-EZ-hao" id="r2D-kc-C7E">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOLDERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REq-cJ-zyo">
+                                            <rect key="frame" x="20" y="10" width="77" height="24"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQp-jQ-k2b">
+                                            <rect key="frame" x="302" y="6" width="53" height="32"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                            <state key="normal" title="SEE ALL"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="REq-cJ-zyo" firstAttribute="centerY" secondItem="r2D-kc-C7E" secondAttribute="centerY" id="4eS-hJ-2H6"/>
+                                        <constraint firstItem="GQp-jQ-k2b" firstAttribute="centerY" secondItem="r2D-kc-C7E" secondAttribute="centerY" id="HCN-4A-tmC"/>
+                                        <constraint firstAttribute="trailing" secondItem="GQp-jQ-k2b" secondAttribute="trailing" constant="20" id="XQe-2a-OqB"/>
+                                        <constraint firstItem="REq-cJ-zyo" firstAttribute="leading" secondItem="r2D-kc-C7E" secondAttribute="leading" constant="20" id="lvm-F2-0ZZ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SetCell" rowHeight="130" id="ug2-Ks-dnK" customClass="SetCellTableViewCell" customModule="masterios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="99.333333333333343" width="375" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ug2-Ks-dnK" id="Keb-ej-K1C">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
@@ -139,8 +165,8 @@
                                     <outlet property="TitleLabel" destination="HOY-J8-7iM" id="GmC-80-l2h"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FolderCell" rowHeight="130" id="AGe-HM-tG3" customClass="FolderCellTableViewCell" customModule="masterios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="158" width="375" height="130"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FolderCell" rowHeight="130" id="AGe-HM-tG3" customClass="FolderCellTableViewCell" customModule="masterios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="229.33333333333337" width="375" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AGe-HM-tG3" id="lqw-O2-R83">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
@@ -204,18 +230,17 @@
                             <outlet property="delegate" destination="2jo-Ov-bxT" id="qEI-Ul-zlE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="HOME" id="plO-SN-uAu"/>
+                    <navigationItem key="navigationItem" title="Home" largeTitleDisplayMode="always" id="plO-SN-uAu"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jqU-L0-8D5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3352.8000000000002" y="609.60591133004925"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="Wdk-e1-Hwm">
             <objects>
                 <navigationController id="eH2-36-H5D" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="home" id="VrM-Yg-CBu">
-                        <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="VrM-Yg-CBu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="JRZ-pB-ULC">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -1,0 +1,20 @@
+//
+//  HeaderCellTableViewCell.swift
+//  masterios
+//
+//  Created by Dalton Prescott Ng on 30/3/19.
+//  Copyright © 2019 masterapp. All rights reserved.
+//
+
+import UIKit
+
+class HeaderCellTableViewCell: UITableViewCell {
+    
+    // Outlets
+    
+    
+    
+    
+    
+    
+}
