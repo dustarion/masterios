@@ -10,12 +10,15 @@ import Foundation
 import UIKit
 
 enum AppStoryboard : String {
+    
     case Main = "Main"
     case Login = "Login"
+    
     var instance : UIStoryboard {
         return UIStoryboard(name: self.rawValue, bundle: Bundle.main)
         //return UIStoryboard(name: self.rawValue, bundle: nil)
     }
+    
 }
 
 /* Usage */
