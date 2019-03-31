@@ -84,13 +84,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOLDERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REq-cJ-zyo">
-                                            <rect key="frame" x="20" y="10" width="77" height="24"/>
+                                            <rect key="frame" x="30" y="20" width="77" height="14"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQp-jQ-k2b">
-                                            <rect key="frame" x="302" y="6" width="53" height="32"/>
+                                            <rect key="frame" x="302" y="20" width="53" height="14"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
                                             <state key="normal" title="SEE ALL"/>
                                             <connections>
@@ -101,9 +101,12 @@
                                     <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="REq-cJ-zyo" firstAttribute="centerY" secondItem="r2D-kc-C7E" secondAttribute="centerY" id="4eS-hJ-2H6"/>
-                                        <constraint firstItem="GQp-jQ-k2b" firstAttribute="centerY" secondItem="r2D-kc-C7E" secondAttribute="centerY" id="HCN-4A-tmC"/>
+                                        <constraint firstItem="GQp-jQ-k2b" firstAttribute="top" secondItem="r2D-kc-C7E" secondAttribute="top" constant="20" id="Goz-nz-KZ3"/>
                                         <constraint firstAttribute="trailing" secondItem="GQp-jQ-k2b" secondAttribute="trailing" constant="20" id="XQe-2a-OqB"/>
-                                        <constraint firstItem="REq-cJ-zyo" firstAttribute="leading" secondItem="r2D-kc-C7E" secondAttribute="leading" constant="20" id="lvm-F2-0ZZ"/>
+                                        <constraint firstItem="REq-cJ-zyo" firstAttribute="top" secondItem="r2D-kc-C7E" secondAttribute="top" constant="20" id="Ygx-PR-LcZ"/>
+                                        <constraint firstItem="REq-cJ-zyo" firstAttribute="leading" secondItem="r2D-kc-C7E" secondAttribute="leading" constant="30" id="lvm-F2-0ZZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="GQp-jQ-k2b" secondAttribute="bottom" constant="10" id="ohU-O7-0nJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="REq-cJ-zyo" secondAttribute="bottom" constant="10" id="xme-wF-Dud"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

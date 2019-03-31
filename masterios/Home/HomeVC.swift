@@ -81,7 +81,6 @@ class HomeVC: UITableViewController {
         var index = indexPath.row
         
         switch index {
-            
         // Sets Header Cell
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: HeaderCellId, for: indexPath) as! HeaderCellTableViewCell
