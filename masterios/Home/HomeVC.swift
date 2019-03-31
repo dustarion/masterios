@@ -40,12 +40,12 @@ class HomeVC: UITableViewController {
     fileprivate func dummyData() {
         
         // Dummy Data for Folders
-        for _ in 0...3 {
+        for _ in 0...2 {
             folders.append(MasterFolder(title: "Rocket Science", setCount: Int.random(in: 1..<50)))
         }
         
         // Dummy Data for Sets
-        for _ in 0...3 {
+        for _ in 0...2 {
             sets.append(MasterSet(title: "The Basic Psychology Of Human Beings", percentage: String(Int.random(in: 1..<100))))
         }
         
@@ -53,7 +53,7 @@ class HomeVC: UITableViewController {
     
     // Setting up the Table Views
     fileprivate func tableViewSetup() {
-        tableView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
+        tableView.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 130
     }
@@ -62,29 +62,58 @@ class HomeVC: UITableViewController {
     
     // Height For Row
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return (UITableView.automaticDimension >= 130) ? (UITableView.automaticDimension) : (130)
+        let index = indexPath.row
+        
+        if (index == 0) || (index == (sets.count+1)) {
+            return (UITableView.automaticDimension >= 44) ? (UITableView.automaticDimension) : (44)
+        } else {
+            return (UITableView.automaticDimension >= 130) ? (UITableView.automaticDimension) : (130)
+        }
     }
     
     // Number Of Sections
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
     // Cell For Row
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let index = indexPath.row
+        var index = indexPath.row
         
-        // Folder
-        if indexPath.section == 0 {
+        switch index {
+            
+        // Sets Header Cell
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: HeaderCellId, for: indexPath) as! HeaderCellTableViewCell
+            cell.TitleLabel.text = Header.sets.rawValue
+            return cell
+          
+        // Sets Cell
+        case 1...sets.count:
+            index -= 1 // Reset Index
+            let cell = tableView.dequeueReusableCell(withIdentifier: SetCellId, for: indexPath) as! SetCellTableViewCell
+            cell.updateData(title: sets[index].title, percent: sets[index].percentage)
+            return cell
+            
+        // Folder Header Cell
+        case (sets.count+1):
+            let cell = tableView.dequeueReusableCell(withIdentifier: HeaderCellId, for: indexPath) as! HeaderCellTableViewCell
+            cell.TitleLabel.text = Header.folders.rawValue
+            return cell
+            
+        // Folder Cell
+        case (sets.count+1)...(sets.count+folders.count+1):
+            index -= sets.count+2
             let cell = tableView.dequeueReusableCell(withIdentifier: FolderCellId, for: indexPath) as! FolderCellTableViewCell
             cell.updateData(title: folders[index].title, setCount: folders[index].setCount)
             return cell
+            
+        default:
+            print("A Serious Error Occured When Loading the Cells")
+            let cell = tableView.dequeueReusableCell(withIdentifier: SetCellId, for: indexPath) as! SetCellTableViewCell
+            cell.updateData(title: sets[index].title, percent: sets[index].percentage)
+            return cell
         }
-        
-        // Normal Set
-        let cell = tableView.dequeueReusableCell(withIdentifier: SetCellId, for: indexPath) as! SetCellTableViewCell
-        cell.updateData(title: sets[index].title, percent: sets[index].percentage)
-        return cell
     }
     
     // Handling Sections

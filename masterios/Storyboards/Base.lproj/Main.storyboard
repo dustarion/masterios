@@ -70,15 +70,14 @@
         <scene sceneID="X9z-3B-vCJ">
             <objects>
                 <tableViewController id="2jo-Ov-bxT" customClass="HomeVC" customModule="masterios" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ED5-zb-ZyX">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ED5-zb-ZyX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.97254901959999995" green="0.90588235289999997" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HeaderCell" id="m1j-EZ-hao" customClass="HeaderCellTableViewCell" customModule="masterios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.333333333333343" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m1j-EZ-hao" id="r2D-kc-C7E">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -94,6 +93,9 @@
                                             <rect key="frame" x="302" y="6" width="53" height="32"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
                                             <state key="normal" title="SEE ALL"/>
+                                            <connections>
+                                                <action selector="SeeAllButtonClicked:" destination="m1j-EZ-hao" eventType="touchUpInside" id="W5Y-P3-l3b"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,9 +106,13 @@
                                         <constraint firstItem="REq-cJ-zyo" firstAttribute="leading" secondItem="r2D-kc-C7E" secondAttribute="leading" constant="20" id="lvm-F2-0ZZ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="SeeAllButton" destination="GQp-jQ-k2b" id="ism-OS-60D"/>
+                                    <outlet property="TitleLabel" destination="REq-cJ-zyo" id="kSS-vQ-8QY"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SetCell" rowHeight="130" id="ug2-Ks-dnK" customClass="SetCellTableViewCell" customModule="masterios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="99.333333333333343" width="375" height="130"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ug2-Ks-dnK" id="Keb-ej-K1C">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
@@ -166,7 +172,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FolderCell" rowHeight="130" id="AGe-HM-tG3" customClass="FolderCellTableViewCell" customModule="masterios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="229.33333333333337" width="375" height="130"/>
+                                <rect key="frame" x="0.0" y="202" width="375" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AGe-HM-tG3" id="lqw-O2-R83">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>

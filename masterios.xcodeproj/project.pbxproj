@@ -241,9 +241,9 @@
 		49F2A2FA224F800200D5A67A /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				4999C932224F9E0500C765C0 /* HeaderCellTableViewCell.swift */,
 				49F2A2EC224E840300D5A67A /* SetCellTableViewCell.swift */,
 				49F2A2F3224F313100D5A67A /* FolderCellTableViewCell.swift */,
-				4999C932224F9E0500C765C0 /* HeaderCellTableViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";

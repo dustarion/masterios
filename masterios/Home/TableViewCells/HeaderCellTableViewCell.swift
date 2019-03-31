@@ -11,10 +11,17 @@ import UIKit
 class HeaderCellTableViewCell: UITableViewCell {
     
     // Outlets
+    @IBOutlet weak var TitleLabel: UILabel!
+    @IBOutlet weak var SeeAllButton: UIButton!
     
     
+    @IBAction func SeeAllButtonClicked(_ sender: Any) {
+        print("See All")
+    }
     
-    
-    
-    
+}
+
+enum Header : String {
+    case folders = "Folders"
+    case sets = "Sets"
 }
