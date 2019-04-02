@@ -10,10 +10,8 @@
 		130BA0D21B98D743BE0DD693 /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7A93B1C2238AF1D20A6 /* color.swift */; };
 		130BA150EC39D693067FE486 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7639AF7D9EA3B6E74C3 /* LoginVC.swift */; };
 		130BA1B9E65171342C97410C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 130BA751CD2AC06B17DC8CCE /* Main.storyboard */; };
-		130BA364F2971598582E4F2D /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA95CF5EB7F5A0BDE28D6 /* types.swift */; };
 		130BA5F97163554A7C491B3A /* masteriosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BACDD85BB5E71CC838E97 /* masteriosUITests.swift */; };
 		130BA647699BE8DB18851F68 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7639AF7D9EA3B6E74C3 /* LoginVC.swift */; };
-		130BA9FE5AFACD9B3205F263 /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA95CF5EB7F5A0BDE28D6 /* types.swift */; };
 		130BAA236E28EE4E8BD4C8FB /* masterios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 130BA2DB0AB773C343490D9D /* masterios.xcdatamodeld */; };
 		130BAAA34C4B04DC382C99D3 /* masteriosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA88FF33A8CAB6A03BED0 /* masteriosTests.swift */; };
 		130BABD91A75E828CA8FD136 /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA95CF5EB7F5A0BDE28D6 /* types.swift */; };
@@ -29,6 +27,8 @@
 		4996812C223C11920009947B /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996812B223C11920009947B /* ForgotPasswordVC.swift */; };
 		4996812E223C23D10009947B /* ui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996812D223C23D10009947B /* ui.swift */; };
 		4999C933224F9E0500C765C0 /* HeaderCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999C932224F9E0500C765C0 /* HeaderCellTableViewCell.swift */; };
+		4999C935225163DB00C765C0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999C934225163DB00C765C0 /* ProfileVC.swift */; };
+		4999C93822516AA100C765C0 /* ProfileCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999C93722516AA100C765C0 /* ProfileCellTableViewCell.swift */; };
 		49E527A2223F65E10014970E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49E527A1223F65E10014970E /* GoogleService-Info.plist */; };
 		49F2A2DF224E06E500D5A67A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F2A2DE224E06E500D5A67A /* Login.storyboard */; };
 		49F2A2E1224E080000D5A67A /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2A2E0224E080000D5A67A /* Storyboard.swift */; };
@@ -85,6 +85,8 @@
 		4996812B223C11920009947B /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		4996812D223C23D10009947B /* ui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ui.swift; sourceTree = "<group>"; };
 		4999C932224F9E0500C765C0 /* HeaderCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCellTableViewCell.swift; sourceTree = "<group>"; };
+		4999C934225163DB00C765C0 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		4999C93722516AA100C765C0 /* ProfileCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCellTableViewCell.swift; sourceTree = "<group>"; };
 		49E527A1223F65E10014970E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49F2A2DE224E06E500D5A67A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		49F2A2E0224E080000D5A67A /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
@@ -167,10 +169,10 @@
 				130BA2DB0AB773C343490D9D /* masterios.xcdatamodeld */,
 				49F2A2E3224E33C800D5A67A /* Global */,
 				49F2A2E2224E33AC00D5A67A /* Storyboards */,
+				4999C936225163E400C765C0 /* Profile */,
 				49372370223DED0A00B99299 /* Home */,
 				49968126223C11590009947B /* Intro */,
 				130BA39CF9D822815D94745A /* Auth */,
-				130BA95CF5EB7F5A0BDE28D6 /* types.swift */,
 			);
 			path = masterios;
 			sourceTree = "<group>";
@@ -216,6 +218,15 @@
 			path = Intro;
 			sourceTree = "<group>";
 		};
+		4999C936225163E400C765C0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4999C934225163DB00C765C0 /* ProfileVC.swift */,
+				4999C93722516AA100C765C0 /* ProfileCellTableViewCell.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		49F2A2E2224E33AC00D5A67A /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +241,7 @@
 		49F2A2E3224E33C800D5A67A /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				130BA95CF5EB7F5A0BDE28D6 /* types.swift */,
 				130BA47D24DD8D28C95ADDA3 /* AppDelegate.swift */,
 				130BA7A93B1C2238AF1D20A6 /* color.swift */,
 				4996812D223C23D10009947B /* ui.swift */,
@@ -529,7 +541,6 @@
 			files = (
 				130BA5F97163554A7C491B3A /* masteriosUITests.swift in Sources */,
 				130BA150EC39D693067FE486 /* LoginVC.swift in Sources */,
-				130BA364F2971598582E4F2D /* types.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,7 +550,6 @@
 			files = (
 				130BAAA34C4B04DC382C99D3 /* masteriosTests.swift in Sources */,
 				130BAFB8513404C293B4F97A /* LoginVC.swift in Sources */,
-				130BA9FE5AFACD9B3205F263 /* types.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +560,7 @@
 				49968125223C11540009947B /* RootVC.swift in Sources */,
 				49F2A2E1224E080000D5A67A /* Storyboard.swift in Sources */,
 				49968128223C11780009947B /* EmailLoginVC.swift in Sources */,
+				4999C935225163DB00C765C0 /* ProfileVC.swift in Sources */,
 				130BAEEBC021D20C2945949F /* AppDelegate.swift in Sources */,
 				49F2A2ED224E840300D5A67A /* SetCellTableViewCell.swift in Sources */,
 				130BAA236E28EE4E8BD4C8FB /* masterios.xcdatamodeld in Sources */,
@@ -559,6 +570,7 @@
 				4996812C223C11920009947B /* ForgotPasswordVC.swift in Sources */,
 				4996812A223C11840009947B /* EmailSignupVC.swift in Sources */,
 				4996812E223C23D10009947B /* ui.swift in Sources */,
+				4999C93822516AA100C765C0 /* ProfileCellTableViewCell.swift in Sources */,
 				130BA0D21B98D743BE0DD693 /* color.swift in Sources */,
 				49F2A2F4224F313100D5A67A /* FolderCellTableViewCell.swift in Sources */,
 				4999C933224F9E0500C765C0 /* HeaderCellTableViewCell.swift in Sources */,

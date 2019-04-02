@@ -120,20 +120,6 @@ class HomeVC: UITableViewController {
         return (sets.count + folders.count + 2)
     }
     
-//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        if section == 0 {
-//            return "Folders" // Folders
-//        } else {
-//            return "Recent Sets" // Recent Sets
-//        }
-//    }
-//
-//    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
-//        let header = view as! UITableViewHeaderFooterView
-//        header.textLabel?.textColor = UIColor.white
-//        header.textLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: 20.0)!
-//    }
-    
     // Handling Clicking On Cells
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Selected Row: " + String(indexPath.row))
