@@ -21,6 +21,7 @@
 		130BAEEBC021D20C2945949F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA47D24DD8D28C95ADDA3 /* AppDelegate.swift */; };
 		130BAFB8513404C293B4F97A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7639AF7D9EA3B6E74C3 /* LoginVC.swift */; };
 		34070E4683230A117E93A7F3 /* Pods_masteriosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F56844231D259BC89E41B03 /* Pods_masteriosUITests.framework */; };
+		4916E5F92269D56200BCB72B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916E5F82269D56200BCB72B /* TabBar.swift */; };
 		49968125223C11540009947B /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49968124223C11540009947B /* RootVC.swift */; };
 		49968128223C11780009947B /* EmailLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49968127223C11780009947B /* EmailLoginVC.swift */; };
 		4996812A223C11840009947B /* EmailSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49968129223C11840009947B /* EmailSignupVC.swift */; };
@@ -30,6 +31,8 @@
 		4999C935225163DB00C765C0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999C934225163DB00C765C0 /* ProfileVC.swift */; };
 		4999C93822516AA100C765C0 /* ProfileCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999C93722516AA100C765C0 /* ProfileCellTableViewCell.swift */; };
 		49E527A2223F65E10014970E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49E527A1223F65E10014970E /* GoogleService-Info.plist */; };
+		49F2627622673FCA00701AB8 /* FeedbackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2627522673FCA00701AB8 /* FeedbackTableViewCell.swift */; };
+		49F2627822673FDA00701AB8 /* ProfileHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2627722673FDA00701AB8 /* ProfileHeaderTableViewCell.swift */; };
 		49F2A2DF224E06E500D5A67A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F2A2DE224E06E500D5A67A /* Login.storyboard */; };
 		49F2A2E1224E080000D5A67A /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2A2E0224E080000D5A67A /* Storyboard.swift */; };
 		49F2A2E5224E33DE00D5A67A /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2A2E4224E33DE00D5A67A /* test.swift */; };
@@ -79,6 +82,7 @@
 		130BAE65CB99FA7B78AD9591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		1E36FF8EE4DC3FC41CA25765 /* Pods-masterios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masterios.release.xcconfig"; path = "Target Support Files/Pods-masterios/Pods-masterios.release.xcconfig"; sourceTree = "<group>"; };
 		2F56844231D259BC89E41B03 /* Pods_masteriosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_masteriosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4916E5F82269D56200BCB72B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		49968124223C11540009947B /* RootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
 		49968127223C11780009947B /* EmailLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginVC.swift; sourceTree = "<group>"; };
 		49968129223C11840009947B /* EmailSignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignupVC.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 		4999C934225163DB00C765C0 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		4999C93722516AA100C765C0 /* ProfileCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCellTableViewCell.swift; sourceTree = "<group>"; };
 		49E527A1223F65E10014970E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49F2627522673FCA00701AB8 /* FeedbackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackTableViewCell.swift; sourceTree = "<group>"; };
+		49F2627722673FDA00701AB8 /* ProfileHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		49F2A2DE224E06E500D5A67A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		49F2A2E0224E080000D5A67A /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		49F2A2E4224E33DE00D5A67A /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
@@ -172,6 +178,7 @@
 				4999C936225163E400C765C0 /* Profile */,
 				49372370223DED0A00B99299 /* Home */,
 				49968126223C11590009947B /* Intro */,
+				4916E5F72269D54700BCB72B /* Tab Bar */,
 				130BA39CF9D822815D94745A /* Auth */,
 			);
 			path = masterios;
@@ -199,6 +206,14 @@
 			);
 			sourceTree = "<group>";
 		};
+		4916E5F72269D54700BCB72B /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				4916E5F82269D56200BCB72B /* TabBar.swift */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
 		49372370223DED0A00B99299 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +238,8 @@
 			children = (
 				4999C934225163DB00C765C0 /* ProfileVC.swift */,
 				4999C93722516AA100C765C0 /* ProfileCellTableViewCell.swift */,
+				49F2627522673FCA00701AB8 /* FeedbackTableViewCell.swift */,
+				49F2627722673FDA00701AB8 /* ProfileHeaderTableViewCell.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -350,6 +367,7 @@
 		130BAB0AB8AACF9E529EFCB7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = masterapp;
 				TargetAttributes = {
 					130BA4C26E25B90F85E1D13B = {
@@ -359,10 +377,11 @@
 			};
 			buildConfigurationList = 130BA2EACB348E8D3338F1EA /* Build configuration list for PBXProject "masterios" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 130BACBE445ADC25A6EFB923;
 			productRefGroup = 130BABB2B022D94B54162655 /* Products */;
@@ -565,6 +584,7 @@
 				49F2A2ED224E840300D5A67A /* SetCellTableViewCell.swift in Sources */,
 				130BAA236E28EE4E8BD4C8FB /* masterios.xcdatamodeld in Sources */,
 				49F2A2E5224E33DE00D5A67A /* test.swift in Sources */,
+				49F2627622673FCA00701AB8 /* FeedbackTableViewCell.swift in Sources */,
 				49F2A2EB224E83E400D5A67A /* HomeVC.swift in Sources */,
 				130BADBBEA3A9985C447E036 /* InitVC.swift in Sources */,
 				4996812C223C11920009947B /* ForgotPasswordVC.swift in Sources */,
@@ -572,11 +592,13 @@
 				4996812E223C23D10009947B /* ui.swift in Sources */,
 				4999C93822516AA100C765C0 /* ProfileCellTableViewCell.swift in Sources */,
 				130BA0D21B98D743BE0DD693 /* color.swift in Sources */,
+				49F2627822673FDA00701AB8 /* ProfileHeaderTableViewCell.swift in Sources */,
 				49F2A2F4224F313100D5A67A /* FolderCellTableViewCell.swift in Sources */,
 				4999C933224F9E0500C765C0 /* HeaderCellTableViewCell.swift in Sources */,
 				130BA647699BE8DB18851F68 /* LoginVC.swift in Sources */,
 				130BABD91A75E828CA8FD136 /* types.swift in Sources */,
 				49F2A2F9224F7F1600D5A67A /* HomeData.swift in Sources */,
+				4916E5F92269D56200BCB72B /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -746,6 +769,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

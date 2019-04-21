@@ -15,8 +15,62 @@ import UIKit
 //    }
 //}
 
+// Colours
+public let newSetCardBackgroundColour = UIColor(red:0.15, green:0.15, blue:0.15, alpha:1.0)
+public let yellowTintColour = UIColor(red:0.97, green:0.91, blue:0.11, alpha:1.0)
+
+public func showNewSetTabOptions(sender: UIViewController) {
+    let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+    alert.view.tintColor = yellowTintColour
+    
+    
+    let subview = alert.view.subviews.first! as UIView
+    let alertContentView = subview.subviews.first! as UIView
+    alertContentView.backgroundColor = .black  //UIColor.blackColor()
+    alert.view.layer.cornerRadius = 15
+    
+    //.black//newSetCardBackgroundColour
+    //alert.preferredStyle = //UIActionSheetStyle.blackTranslucent
+    
+    alert.addAction(UIAlertAction(title: "New Study Set", style: .default , handler:{ (UIAlertAction) in
+        // Transition New Set
+        sender.performSegue(withIdentifier: "toNewSet", sender: sender)
+    }))
+    
+    alert.addAction(UIAlertAction(title: "Create Folder", style: .default , handler:{ (UIAlertAction) in
+        // Draft
+        // Does nothing for now
+    }))
+    
+    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:{ (UIAlertAction) in
+        // Cancel
+    }))
+    
+    sender.present(alert, animated: true, completion: {
+        // Done
+    })
+}
 
 extension UIView {
+    
+    // Extensions
+    func searchVisualEffectsSubview() -> UIVisualEffectView? {
+        
+        if let visualEffectView = self as? UIVisualEffectView {
+            return visualEffectView
+        }
+            
+        else {
+            for subview in subviews {
+                
+                if let found = subview.searchVisualEffectsSubview() {
+                    return found
+                }
+            }
+        }
+        
+        return nil
+    }
     
     // Shadow Extensions
     func dropShadow(scale: Bool = true) {

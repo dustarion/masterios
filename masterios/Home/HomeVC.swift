@@ -67,7 +67,7 @@ class HomeVC: UITableViewController {
         if (index == 0) || (index == (sets.count+1)) {
             return (UITableView.automaticDimension >= 44) ? (UITableView.automaticDimension) : (44)
         } else {
-            return (UITableView.automaticDimension >= 130) ? (UITableView.automaticDimension) : (130)
+            return UITableView.automaticDimension //>= 130//) ? (UITableView.automaticDimension) : (130)
         }
     }
     
