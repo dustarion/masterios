@@ -22,6 +22,7 @@
 		130BAFB8513404C293B4F97A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BA7639AF7D9EA3B6E74C3 /* LoginVC.swift */; };
 		34070E4683230A117E93A7F3 /* Pods_masteriosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F56844231D259BC89E41B03 /* Pods_masteriosUITests.framework */; };
 		4916E5F92269D56200BCB72B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4916E5F82269D56200BCB72B /* TabBar.swift */; };
+		4936E16F226EC25500F3C1AB /* NewSetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936E16E226EC25500F3C1AB /* NewSetVC.swift */; };
 		49968125223C11540009947B /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49968124223C11540009947B /* RootVC.swift */; };
 		49968128223C11780009947B /* EmailLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49968127223C11780009947B /* EmailLoginVC.swift */; };
 		4996812A223C11840009947B /* EmailSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49968129223C11840009947B /* EmailSignupVC.swift */; };
@@ -83,6 +84,7 @@
 		1E36FF8EE4DC3FC41CA25765 /* Pods-masterios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masterios.release.xcconfig"; path = "Target Support Files/Pods-masterios/Pods-masterios.release.xcconfig"; sourceTree = "<group>"; };
 		2F56844231D259BC89E41B03 /* Pods_masteriosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_masteriosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4916E5F82269D56200BCB72B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		4936E16E226EC25500F3C1AB /* NewSetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSetVC.swift; sourceTree = "<group>"; };
 		49968124223C11540009947B /* RootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
 		49968127223C11780009947B /* EmailLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginVC.swift; sourceTree = "<group>"; };
 		49968129223C11840009947B /* EmailSignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignupVC.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				130BA2DB0AB773C343490D9D /* masterios.xcdatamodeld */,
 				49F2A2E3224E33C800D5A67A /* Global */,
 				49F2A2E2224E33AC00D5A67A /* Storyboards */,
+				4936E16D226EC23B00F3C1AB /* New Set */,
 				4999C936225163E400C765C0 /* Profile */,
 				49372370223DED0A00B99299 /* Home */,
 				49968126223C11590009947B /* Intro */,
@@ -212,6 +215,14 @@
 				4916E5F82269D56200BCB72B /* TabBar.swift */,
 			);
 			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		4936E16D226EC23B00F3C1AB /* New Set */ = {
+			isa = PBXGroup;
+			children = (
+				4936E16E226EC25500F3C1AB /* NewSetVC.swift */,
+			);
+			path = "New Set";
 			sourceTree = "<group>";
 		};
 		49372370223DED0A00B99299 /* Home */ = {
@@ -576,6 +587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4936E16F226EC25500F3C1AB /* NewSetVC.swift in Sources */,
 				49968125223C11540009947B /* RootVC.swift in Sources */,
 				49F2A2E1224E080000D5A67A /* Storyboard.swift in Sources */,
 				49968128223C11780009947B /* EmailLoginVC.swift in Sources */,

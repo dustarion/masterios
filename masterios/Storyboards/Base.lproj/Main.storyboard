@@ -436,7 +436,8 @@
         <!--Navigation Controller-->
         <scene sceneID="AxU-7U-Qgd">
             <objects>
-                <navigationController id="fvZ-dT-MzW" sceneMemberID="viewController">
+                <navigationController toolbarHidden="NO" id="fvZ-dT-MzW" sceneMemberID="viewController">
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="eNy-qS-R4b">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -448,6 +449,10 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="9fe-am-hOQ">
+                        <rect key="frame" x="0.0" y="729" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Rp0-Nt-9p9" kind="relationship" relationship="rootViewController" id="aVw-An-bg6"/>
                     </connections>
@@ -459,38 +464,22 @@
         <!--NEW SET-->
         <scene sceneID="ilA-YK-ZSB">
             <objects>
-                <viewController storyboardIdentifier="NewSetViewController" id="Rp0-Nt-9p9" customClass="NewSetViewController" customModule="Master" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewSetViewController" id="Rp0-Nt-9p9" customClass="NewSetViewController" customModule="masterios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xsq-1E-887">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="589"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJu-p5-C6P">
-                                <rect key="frame" x="0.0" y="594" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem id="jJh-8s-vFT"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LuK-ii-JVU"/>
-                                    <barButtonItem systemItem="add" id="ffO-Vr-d7l">
-                                        <connections>
-                                            <action selector="addButton:" destination="Rp0-Nt-9p9" id="dZJ-EM-hIw"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Lor-NI-KFh"/>
-                                </items>
-                                <color key="tintColor" red="0.66070848699999996" green="0.056940451259999997" blue="0.78384202719999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </toolbar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ulG-8J-KUH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="594"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="589"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="day-6f-8VU"/>
                     </view>
                     <navigationItem key="navigationItem" title="NEW SET" id="Uwq-YC-xem"/>
                     <connections>
-                        <outlet property="bottomToolBar" destination="CJu-p5-C6P" id="PDR-F1-B7A"/>
                         <outlet property="scrollView" destination="ulG-8J-KUH" id="5zz-5m-9A5"/>
                     </connections>
                 </viewController>
